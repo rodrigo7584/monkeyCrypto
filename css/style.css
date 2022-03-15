@@ -279,6 +279,8 @@ section.tokenomics {
   height: calc(100vw / 2.142857142857143);
 }
 section.tokenomics .conteudo {
+  padding: 30px;
+  position: relative;
   z-index: 1;
 }
 section.tokenomics .conteudo p {
@@ -309,6 +311,37 @@ section.tokenomics .conteudo .titulo p::before {
   margin-right: 5px;
   margin-left: -25px;
 }
+section.tokenomics .conteudo .itens {
+  position: absolute;
+}
+section.tokenomics .conteudo .itens.advisor {
+  left: 29%;
+  top: 22%;
+}
+section.tokenomics .conteudo .itens.burn {
+  left: 53%;
+  top: 18%;
+}
+section.tokenomics .itens.airdrop {
+  left: 70%;
+  top: 33%;
+}
+section.tokenomics .itens.game-incentives {
+  top: 64%;
+  left: 74%;
+}
+section.tokenomics .itens.devs {
+  top: 79%;
+  left: 56%;
+}
+section.tokenomics .itens.liquidity {
+  top: 67%;
+  left: 21%;
+}
+section.tokenomics .itens.market {
+  left: 22%;
+  top: 42%;
+}
 section.tokenomics .conteudo .itens.burn .titulo p::before {
   background: linear-gradient(to left, #1596e2, #6fcad9);
 }
@@ -334,7 +367,39 @@ section.tokenomics .conteudo .itens.advisor .titulo p::before {
 section.rodape {
   height: calc(100vw / 4.660194174757282);
 }
-
+section.rodape .conteudo {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 40%;
+}
+section.rodape .conteudo .coluna:first-child {
+  display: grid;
+  justify-items: center;
+}
+section.rodape .logo {
+  height: 100px;
+}
+section.rodape .social {
+  display: flex;
+}
+section.rodape .social img {
+  height: 25px;
+  margin: 5px;
+}
+section.rodape .social img:hover {
+  filter: brightness(0.8);
+}
+section.rodape ul.submenu {
+  list-style: none;
+  font-family: kg;
+}
+section.rodape ul.submenu li {
+  transition: 0.1s;
+  margin-bottom: 10px;
+}
+section.rodape ul.submenu li:hover {
+  transform: translate(5px);
+}
 section.teste {
   margin-top: 100vh;
   display: flex;
