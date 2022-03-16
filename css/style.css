@@ -6,6 +6,12 @@
   font-family: kg;
   src: url('../fonts/KGInimitableOriginal.ttf');
 }
+.mostrar-991 {
+  display: none;
+}
+.navbar-brand.logo img {
+  height: 80px;
+}
 .height-full {
   height: 100%;
 }
@@ -182,63 +188,65 @@ section.characters .conteudo .lista .box .char {
 /*FIM CHARACTERS*/
 /*GAMEPLAY*/
 section.gameplay {
-  height: calc(100vw / 2.953846153846154);
+  height: calc(100vw / 1.105990783410138);
+  display: grid;
+  align-items: center;
 }
-section.gameplay .conteudo {
+section.gameplay .conteudoGameplay {
   z-index: 1;
+  padding: 50px 0px;
   align-self: center;
 }
-section.gameplay .conteudo h2 {
+section.gameplay .conteudoGameplay h2 {
   padding-bottom: 30px;
 }
-section.gameplay .conteudo .caroussel {
+section.gameplay .conteudoGameplay .caroussel {
   max-width: 100%;
   display: flex;
   justify-content: center;
 }
-section.gameplay .conteudo .caroussel .video {
+section.gameplay .conteudoGameplay .caroussel .video {
   width: 500px;
 }
-section.gameplay .conteudo .caroussel video {
+section.gameplay .conteudoGameplay .caroussel video {
   max-width: 100%;
 }
-section.gameplay .conteudo .caroussel .controle {
+section.gameplay .conteudoGameplay .caroussel .controle {
   filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.5));
   align-self: center;
 }
-section.gameplay .conteudo .caroussel .controle.disable,
-section.gameplay .conteudo .caroussel .controle.disable:hover,
-section.gameplay .conteudo .caroussel .controle.disable:active {
+section.gameplay .conteudoGameplay .caroussel .controle.disable,
+section.gameplay .conteudoGameplay .caroussel .controle.disable:hover,
+section.gameplay .conteudoGameplay .caroussel .controle.disable:active {
   filter: grayscale(1);
   transform: none;
   cursor: default;
 }
-section.gameplay .conteudo .caroussel .controle:hover {
+section.gameplay .conteudoGameplay .caroussel .controle:hover {
   cursor: pointer;
   filter: brightness(0.9) drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.7));
   transform: scale(0.95);
 }
-section.gameplay .conteudo .caroussel .controle:active {
+section.gameplay .conteudoGameplay .caroussel .controle:active {
   filter: brightness(0.9) drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.9));
   transform: scale(0.9);
 }
-section.gameplay .conteudo .caroussel .controle img {
+section.gameplay .conteudoGameplay .caroussel .controle img {
   width: 45px;
   margin: 15px;
 }
-/*FIM GAMEPLAY*/
-section.roadmap {
-  height: calc(100vw / 1.771);
-}
-section.roadmap .conteudo {
+section.roadmap .conteudoRoadmap {
   z-index: 1;
+  padding: 50px 0px;
   align-self: center;
   display: grid;
 }
-section.roadmap .conteudo img.mapa {
+section.roadmap .conteudoRoadmap img.mapa {
   justify-self: center;
   width: 50%;
 }
+/*FIM GAMEPLAY ROADMAP*/
+/*TEAM*/
 section.team {
   height: calc(100vw / 2.382133995037221);
 }
@@ -275,8 +283,10 @@ section.team .conteudo .cartao h6 {
   font-family: kg;
   text-transform: uppercase;
 }
+/*FIM TEAM*/
+/*TOKENOMICS*/
 section.tokenomics {
-  height: calc(100vw / 2.142857142857143);
+  height: calc(100vw / 2.151);
 }
 section.tokenomics .conteudo {
   padding: 30px;
@@ -301,7 +311,6 @@ section.tokenomics .conteudo .numero p {
   font-family: 'Comfortaa';
   font-size: 13px;
 }
-
 section.tokenomics .conteudo .titulo p::before {
   content: ' ';
   display: inline-block;
@@ -363,12 +372,14 @@ section.tokenomics .conteudo .itens.market .titulo p::before {
 section.tokenomics .conteudo .itens.advisor .titulo p::before {
   background: linear-gradient(to left, #56b3ae, #59f5a8);
 }
-
+/*FIM TOKENOMICS*/
+/*RODAPE*/
 section.rodape {
   height: calc(100vw / 4.660194174757282);
 }
 section.rodape .conteudo {
   z-index: 1;
+  padding-top: 25px;
   display: grid;
   grid-template-columns: 20% 20% 20% 40%;
 }
@@ -400,41 +411,241 @@ section.rodape ul.submenu li {
 section.rodape ul.submenu li:hover {
   transform: translate(5px);
 }
-section.teste {
-  margin-top: 100vh;
-  display: flex;
-  align-items: end;
-}
-.cano {
-  height: 100px;
-  width: 50px;
-  background: green;
-  animation: cano 2s ease-in-out infinite;
-}
-.cano1 {
-  height: 80px;
-  width: 50px;
-  background: red;
-  animation: cano 1s ease-in-out infinite;
-}
-.cano2 {
-  height: 110px;
-  width: 50px;
-  background: blue;
-  animation: cano 1.5s ease-in-out infinite;
+section.rodape h5 {
+  color: #ffffff;
+  font-family: Montserrat;
 }
 
-@keyframes cano {
-  0% {
-    transform: scaleY(1);
-    transform-origin: bottom;
+section.rodape form {
+  position: relative;
+}
+section.rodape input,
+section.rodape textarea {
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+}
+section.rodape input:focus-visible,
+section.rodape textarea:focus-visible {
+  outline: none;
+}
+section.rodape input {
+  width: calc(50% - 10px);
+
+  margin-bottom: 10px;
+}
+section.rodape input:first-child {
+  margin-right: 10px;
+}
+section.rodape textarea {
+  width: 100%;
+}
+section.rodape form button {
+  border: none;
+  text-transform: uppercase;
+  font-family: kg;
+  color: #ffffff;
+  padding: 2.5px 30px;
+  margin-top: 5px;
+  background: url('../img/bg-botao2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  float: right;
+  transition: 0.1s ease-in-out;
+}
+section.rodape form button:hover {
+  transform: translate(10px);
+}
+/*FIM RODAPE*/
+@media screen and (max-width: 1199px) {
+  section.topo .nav-link .logo {
+    height: 90px;
   }
-  50% {
-    transform: scaleY(1.5);
-    transform-origin: bottom;
+  section.topo .nav-link {
+    font-size: 16px;
   }
-  100% {
-    transform: scaleY(1);
-    transform-origin: bottom;
+  section.topo .stores .nav-link img {
+    width: 100px;
+  }
+  section.topo .conteudo .btn-play {
+    margin-bottom: 38px;
+  }
+  section.gameplay .conteudoGameplay,
+  section.gameplay .conteudoRoadmap {
+    padding: 10px 0px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mostrar-991 {
+    display: block;
+  }
+  .sumir-991 {
+    display: none;
+  }
+  header .navbar-toggler {
+    border: 3px solid #ffffff !important;
+  }
+  header .icone-menu-mobile div {
+    width: 30px;
+    margin: 6px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    opacity: 1;
+    transition: 0.2s ease-in;
+  }
+  header .icone-menu-mobile.ativo div:first-child {
+    transform: translateY(9px) rotate(45deg);
+  }
+  header .icone-menu-mobile.ativo div:nth-child(2) {
+    opacity: 0;
+  }
+  header .icone-menu-mobile.ativo div:last-child {
+    transform: translateY(-9px) rotate(135deg);
+  }
+  div#navbarNavDropdown {
+    border-radius: 15px;
+    width: calc(100% - 20px);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 100px;
+    z-index: 5;
+  }
+  section.topo .conteudo .btn-play {
+    margin: 20px 0px;
+  }
+  section.topo .conteudo .btn-play {
+    padding: 10px 35px;
+    font-size: 20px !important;
+  }
+  section.topo .conteudo h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+  section.topo .social img {
+    height: 30px;
+  }
+  div.cipo img {
+    margin-top: -42px;
+    height: 90px;
+  }
+  section.characters .conteudo h2 {
+    margin-bottom: 35px;
+  }
+  section.characters .conteudo .lista .box {
+    height: 270px;
+  }
+  section.characters .conteudo .lista .box p {
+    font-size: 14px;
+  }
+  section.characters .conteudo .lista .box .placa {
+    height: 45px;
+  }
+  section.gameplay .conteudoGameplay h2 {
+    padding-bottom: 10px;
+  }
+  section.gameplay .conteudoGameplay .caroussel .video {
+    width: 50%;
+  }
+  section.team {
+    height: calc(100vw / 2.389);
+  }
+  section.team .conteudo .cartao .foto img {
+    height: 110px;
+    width: 110px;
+  }
+  section.team .conteudo .cartao h6 {
+    font-size: 23px;
+  }
+  section.tokenomics .conteudo {
+    padding: 5px;
+  }
+  section.tokenomics .conteudo .titulo p {
+    font-family: kg;
+    font-size: 15px;
+  }
+  section.tokenomics .conteudo p {
+    font-size: 12px;
+  }
+  section.tokenomics .conteudo .numero p {
+    font-size: 11px;
+  }
+  section.tokenomics .conteudo .itens.burn {
+    left: 56%;
+  }
+  section.tokenomics .itens.devs {
+    left: 57%;
+  }
+  section.rodape .bg_video {
+    width: 120vw;
+  }
+  section.rodape ul.submenu li {
+    margin-bottom: 0px;
+  }
+  section.rodape ul.submenu li a {
+    font-size: 13px;
+  }
+  section.rodape .logo {
+    height: 80px;
+  }
+  /* section.rodape input,
+  section.rodape textarea {
+    margin-bottom: 5px;
+    height: 35px;
+    font-size: 13px;
+    padding: 2.5px 5px;
+  } */
+  section.rodape form button {
+    margin-top: 0px;
+  }
+  section.rodape h5 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 27px !important;
+  }
+  header .navbar-toggler {
+    border: 2px solid #ffffff !important;
+  }
+  header .icone-menu-mobile div {
+    height: 2px;
+  }
+  .navbar-brand.logo img {
+    height: 60px;
+  }
+  section.topo .conteudo .btn-play {
+    margin: 0px;
+  }
+  section.topo .conteudo h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  div.cipo img {
+    margin-top: -30px;
+    height: 60px;
+  }
+  section.characters .conteudo .lista {
+    justify-content: center;
+  }
+  section.characters .conteudo .lista .box {
+    height: 270px;
+    width: 50%;
+  }
+  section.team {
+    height: calc(135vw / 2.389);
+  }
+  section.team .bg_video {
+    width: 135vw;
+    right: -15.5vw;
+  }
+  section.team .conteudo .cartao {
+    padding: 5px;
+  }
+  section.team .conteudo .cartao h6 {
+    font-size: 21px;
   }
 }

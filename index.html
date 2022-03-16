@@ -35,9 +35,9 @@
       <header>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="index.php">
-              <img class="mostrar-991 logo" src="./img/farmpoly-logo.png" alt="" />
-            </a> -->
+            <a class="navbar-brand logo" href="index.php">
+              <img class="mostrar-991" src="./img/logo.gif" alt="" />
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -47,15 +47,11 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon">
-                <img id="mobile-menu" src="./img/mobile-menu-icon.svg" alt="" />
-                <img
-                  id="mobile-x"
-                  src="./img/mobile-x-icon.svg"
-                  alt=""
-                  style="display: none"
-                />
-              </span>
+              <div class="icone-menu-mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </button>
             <div
               class="collapse navbar-collapse justify-content-center"
@@ -162,22 +158,21 @@
         </div>
       </div>
     </section>
-    <div class="ondas"></div>
-    <section class="gameplay">
+    <section class="gameplay roadmap">
       <video muted autoplay loop class="bg_video">
-        <source src="videos/gameplay.mp4" type="video/mp4" />
+        <source src="videos/gameplayRoadmap.mp4" type="video/mp4" />
       </video>
-      <div class="container height-full">
-        <div class="row height-full">
-          <div class="conteudo">
+      <div class="container">
+        <div class="row">
+          <div class="conteudoGameplay">
             <h2>gameplay</h2>
             <div class="caroussel">
               <div class="btn-voltar controle disable">
                 <img src="./img/botao-voltar.png" alt="" />
               </div>
               <div class="video">
-                <video muted autoplay loop>
-                  <source src="videos/gameplay.mp4" type="video/mp4" />
+                <video muted autoplay loop controls>
+                  <source src="videos/topo.mp4" type="video/mp4" />
                 </video>
               </div>
               <div class="btn-avancar controle">
@@ -187,14 +182,9 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="roadmap">
-      <video muted autoplay loop class="bg_video">
-        <source src="videos/roadmap.mp4" type="video/mp4" />
-      </video>
-      <div class="container-fluid height-full">
-        <div class="row height-full">
-          <div class="conteudo">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="conteudoRoadmap">
             <h2>roadmap</h2>
             <img class="mapa" src="./img/map.svg" alt="" />
           </div>
@@ -400,11 +390,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="teste">
-      <div class="cano"></div>
-      <div class="cano1"></div>
-      <div class="cano2"></div>
-    </section> -->
     <script src="./js/script.js"></script>
   </body>
 </html>
