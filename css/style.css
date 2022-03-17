@@ -25,6 +25,31 @@
   overflow-y: hidden;
   overflow-x: hidden;
 }
+.caroussel .controle {
+  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.5));
+  align-self: center;
+  justify-self: center;
+}
+.caroussel .controle.disable,
+.caroussel .controle.disable:hover,
+.caroussel .controle.disable:active {
+  filter: grayscale(1);
+  transform: none;
+  cursor: default;
+}
+.caroussel .controle:hover {
+  cursor: pointer;
+  filter: brightness(0.9) drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.7));
+  transform: scale(0.95);
+}
+.caroussel .controle:active {
+  filter: brightness(0.9) drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.9));
+  transform: scale(0.9);
+}
+.caroussel .controle img {
+  width: 45px;
+  margin: 15px;
+}
 a {
   text-decoration: none !important;
   color: #ffffff !important;
@@ -37,7 +62,7 @@ section {
   position: relative;
 }
 section.topo {
-  height: calc(100vw / 1.75);
+  height: calc(100vw / 1.751);
 }
 section.topo .nav-link {
   color: #ffffff;
@@ -127,22 +152,12 @@ h2 {
 section.characters .conteudo h2 {
   margin-bottom: 100px;
 }
-section.characters .conteudo .lista {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-section.characters .conteudo .lista .box {
-  width: 22%;
-  background: linear-gradient(
-    90deg,
-    rgba(207, 92, 43, 0.55) 0%,
-    rgba(89, 23, 62, 0.55) 100%
-  );
-  border-radius: 30px;
-  height: 400px;
+section.characters .conteudo .caroussel {
   display: grid;
-  grid-template-rows: 55px calc(100% - 55px);
+  grid-template-columns: 60px auto 60px;
+}
+section.characters .conteudo .caroussel .glider {
+  width: 100%;
 }
 section.characters .conteudo .lista .box .placa {
   background: url('../img/bg-madeira.png');
@@ -152,24 +167,25 @@ section.characters .conteudo .lista .box .placa {
   display: grid;
   align-items: center;
   height: 55px;
-  margin-top: -20px;
+  margin-top: 10px;
+  margin-bottom: -20px;
 }
 section.characters .conteudo .lista .box:nth-child(2) .placa {
   transform: rotate(10deg);
 }
-section.characters .conteudo .lista .box:nth-child(2) p {
+section.characters .conteudo .lista .box:nth-child(2) .placa p {
   transform: rotate(-10deg);
 }
 section.characters .conteudo .lista .box:nth-child(3) .placa {
   transform: rotate(3deg);
 }
-section.characters .conteudo .lista .box:nth-child(3) p {
+section.characters .conteudo .lista .box:nth-child(3) .placa p {
   transform: rotate(-3deg);
 }
 section.characters .conteudo .lista .box:nth-child(4) .placa {
   transform: rotate(-5deg);
 }
-section.characters .conteudo .lista .box:nth-child(4) p {
+section.characters .conteudo .lista .box:nth-child(4) .placa p {
   transform: rotate(5deg);
 }
 section.characters .conteudo .lista .box p {
@@ -181,14 +197,22 @@ section.characters .conteudo .lista .box p {
 }
 section.characters .conteudo .lista .box .char {
   display: flex;
+  background: linear-gradient(
+    90deg,
+    rgba(207, 92, 43, 0.55) 0%,
+    rgba(89, 23, 62, 0.55) 100%
+  );
+  border-radius: 30px;
   align-items: center;
   justify-content: center;
-  padding: 0px 10px 25px 10px;
+  padding: 10px;
+  margin: 0px 10px;
+  height: 450px;
 }
 /*FIM CHARACTERS*/
 /*GAMEPLAY*/
 section.gameplay {
-  height: calc(100vw / 1.105990783410138);
+  height: calc(100vw / 1.106);
   display: grid;
   align-items: center;
 }
@@ -202,38 +226,20 @@ section.gameplay .conteudoGameplay h2 {
 }
 section.gameplay .conteudoGameplay .caroussel {
   max-width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 60px 60% 60px;
   justify-content: center;
 }
 section.gameplay .conteudoGameplay .caroussel .video {
   width: 500px;
+  align-self: center;
 }
 section.gameplay .conteudoGameplay .caroussel video {
   max-width: 100%;
 }
-section.gameplay .conteudoGameplay .caroussel .controle {
-  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.5));
-  align-self: center;
-}
-section.gameplay .conteudoGameplay .caroussel .controle.disable,
-section.gameplay .conteudoGameplay .caroussel .controle.disable:hover,
-section.gameplay .conteudoGameplay .caroussel .controle.disable:active {
-  filter: grayscale(1);
-  transform: none;
-  cursor: default;
-}
-section.gameplay .conteudoGameplay .caroussel .controle:hover {
-  cursor: pointer;
-  filter: brightness(0.9) drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.7));
-  transform: scale(0.95);
-}
-section.gameplay .conteudoGameplay .caroussel .controle:active {
-  filter: brightness(0.9) drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.9));
-  transform: scale(0.9);
-}
-section.gameplay .conteudoGameplay .caroussel .controle img {
-  width: 45px;
-  margin: 15px;
+section.gameplay .conteudoCaroussel.glider {
+  max-height: 370px;
+  width: 100%;
 }
 section.roadmap .conteudoRoadmap {
   z-index: 1;
@@ -248,7 +254,7 @@ section.roadmap .conteudoRoadmap img.mapa {
 /*FIM GAMEPLAY ROADMAP*/
 /*TEAM*/
 section.team {
-  height: calc(100vw / 2.382133995037221);
+  height: calc(100vw / 2.384);
 }
 section.team .conteudo {
   align-self: center;
@@ -257,9 +263,12 @@ section.team .conteudo {
 section.team .conteudo h2 {
   padding-bottom: 15px;
 }
-section.team .conteudo .cartoes {
-  display: flex;
-  justify-content: space-evenly;
+section.team .conteudo .caroussel {
+  display: grid;
+  grid-template-columns: 60px auto 60px;
+}
+section.team .conteudo .caroussel .glider {
+  width: 100%;
 }
 section.team .conteudo .cartao {
   display: grid;
@@ -375,7 +384,7 @@ section.tokenomics .conteudo .itens.advisor .titulo p::before {
 /*FIM TOKENOMICS*/
 /*RODAPE*/
 section.rodape {
-  height: calc(100vw / 4.660194174757282);
+  height: calc(100vw / 4.669);
 }
 section.rodape .conteudo {
   z-index: 1;
@@ -472,9 +481,15 @@ section.rodape form button:hover {
   section.topo .conteudo .btn-play {
     margin-bottom: 38px;
   }
+  section.characters .conteudo .lista .box .char {
+    height: 320px;
+  }
   section.gameplay .conteudoGameplay,
   section.gameplay .conteudoRoadmap {
     padding: 10px 0px;
+  }
+  section.gameplay .conteudoGameplay .caroussel .video {
+    padding: 3px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -526,6 +541,15 @@ section.rodape form button:hover {
   }
   section.topo .social img {
     height: 30px;
+  }
+  section.topo .conteudo .stores {
+    margin-top: 5px;
+    display: flex;
+  }
+  section.topo .conteudo .stores img {
+    margin: 3px;
+    height: 60px;
+    width: 100px;
   }
   div.cipo img {
     margin-top: -42px;
@@ -590,13 +614,6 @@ section.rodape form button:hover {
   section.rodape .logo {
     height: 80px;
   }
-  /* section.rodape input,
-  section.rodape textarea {
-    margin-bottom: 5px;
-    height: 35px;
-    font-size: 13px;
-    padding: 2.5px 5px;
-  } */
   section.rodape form button {
     margin-top: 0px;
   }
@@ -634,13 +651,6 @@ section.rodape form button:hover {
   section.characters .conteudo .lista .box {
     height: 270px;
     width: 50%;
-  }
-  section.team {
-    height: calc(135vw / 2.389);
-  }
-  section.team .bg_video {
-    width: 135vw;
-    right: -15.5vw;
   }
   section.team .conteudo .cartao {
     padding: 5px;

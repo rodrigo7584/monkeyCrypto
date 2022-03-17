@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="img/favico.png" />
     <link rel="shortcut icon" href="img/favico.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.css" integrity="sha512-rEnjEH5u8xKS8NLcXC4nuZwT89x+tMB19ddbolNGE7DTl6o3JEo11kHAwryLlALFnxdONjO4xVpjunLWdiZR1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.css"
+      integrity="sha512-rEnjEH5u8xKS8NLcXC4nuZwT89x+tMB19ddbolNGE7DTl6o3JEo11kHAwryLlALFnxdONjO4xVpjunLWdiZR1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,7 +86,7 @@
                   <a class="nav-link" href="#">tokenomics</a>
                 </li>
                 <li class="nav-item">
-                  <div class="stores">
+                  <div class="stores sumir-991">
                     <a class="nav-link" href="#"
                       ><img src="./img/appStore.svg" alt=""
                     /></a>
@@ -106,6 +112,10 @@
               <a href="#"><img src="./img/icone-telegram.svg" alt="" /></a>
               <a href="#"><img src="./img/icone-twitter.svg" alt="" /></a>
             </div>
+            <div class="stores mostrar-991">
+              <a href="#"><img src="./img/appStore.svg" alt="" /></a>
+              <a href="#"><img src="./img/playStore.svg" alt="" /></a>
+            </div>
           </div>
         </div>
       </div>
@@ -121,38 +131,46 @@
         <div class="row height-full">
           <div class="conteudo">
             <h2>characters</h2>
-            <div class="lista">
-              <div class="box">
-                <div class="placa">
-                  <p>????</p>
+            <div class="caroussel caroussel-characters">
+              <div class="btn-voltar controle">
+                <img src="./img/botao-voltar.png" alt="" />
+              </div>
+              <div class="lista">
+                <div class="box">
+                  <div class="placa">
+                    <p>????</p>
+                  </div>
+                  <div class="char">
+                    <p>1</p>
+                  </div>
                 </div>
-                <div class="char">
-                  <p>?</p>
+                <div class="box">
+                  <div class="placa">
+                    <p>???????</p>
+                  </div>
+                  <div class="char">
+                    <p>2</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="placa">
+                    <p>??</p>
+                  </div>
+                  <div class="char">
+                    <p>3</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="placa">
+                    <p>???????</p>
+                  </div>
+                  <div class="char">
+                    <p>4</p>
+                  </div>
                 </div>
               </div>
-              <div class="box">
-                <div class="placa">
-                  <p>???????</p>
-                </div>
-                <div class="char">
-                  <p>?</p>
-                </div>
-              </div>
-              <div class="box">
-                <div class="placa">
-                  <p>??</p>
-                </div>
-                <div class="char">
-                  <p>?</p>
-                </div>
-              </div>
-              <div class="box">
-                <div class="placa">
-                  <p>???????</p>
-                </div>
-                <div class="char">
-                  <p>?</p>
-                </div>
+              <div class="btn-avancar controle">
+                <img src="./img/botao-avancar.png" alt="" />
               </div>
             </div>
           </div>
@@ -167,28 +185,25 @@
         <div class="row">
           <div class="conteudoGameplay">
             <h2>gameplay</h2>
-            <!-- <div class="caroussel">
-              <div class="btn-voltar controle disable">
+            <div class="caroussel caroussel-gameplay">
+              <div class="btn-voltar controle">
                 <img src="./img/botao-voltar.png" alt="" />
               </div>
-              <div class="video">
-                <video muted autoplay loop controls>
-                  <source src="videos/topo.mp4" type="video/mp4" />
-                </video>
+              <div class="conteudoCaroussel">
+                <div class="video">
+                  <video muted autoplay loop controls>
+                    <source src="videos/topo.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="video">
+                  <video muted autoplay loop controls>
+                    <source src="videos/gameplay.mp4" type="video/mp4" />
+                  </video>
+                </div>
               </div>
               <div class="btn-avancar controle">
                 <img src="./img/botao-avancar.png" alt="" />
               </div>
-            </div> -->
-            <div class="aulaC">
-              <div class="caroucel">
-                  <div class="slide1">slide1</div>
-                  <div class="slide2">slide2</div>
-                  <div class="slide3">slide3</div>
-                  <div class="slide4">slide4</div>
-              </div>
-              <button aria-label="Anterior" class="avanca"><<</button>
-              <button aria-label="Proximo" class="volta">>></button>
             </div>
           </div>
         </div>
@@ -210,58 +225,66 @@
         <div class="row height-full">
           <div class="conteudo">
             <h2>Team</h2>
-            <div class="cartoes">
-              <div class="cartao">
-                <div class="foto">
-                  <img src="./img/foto.png" alt="" />
-                </div>
-                <div class="info">
-                  <div class="nome">
-                    <h6>name</h6>
+            <div class="caroussel caroussel-team">
+              <div class="btn-voltar controle">
+                <img src="./img/botao-voltar.png" alt="" />
+              </div>
+              <div class="cartoes">
+                <div class="cartao">
+                  <div class="foto">
+                    <img src="./img/foto.png" alt="" />
                   </div>
-                  <div class="descricao">
-                    <p>Lorem ipsum dolor sit.</p>
+                  <div class="info">
+                    <div class="nome">
+                      <h6>name1</h6>
+                    </div>
+                    <div class="descricao">
+                      <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cartao">
+                  <div class="foto">
+                    <img src="./img/foto.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="nome">
+                      <h6>name2</h6>
+                    </div>
+                    <div class="descricao">
+                      <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cartao">
+                  <div class="foto">
+                    <img src="./img/foto.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="nome">
+                      <h6>name3</h6>
+                    </div>
+                    <div class="descricao">
+                      <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cartao">
+                  <div class="foto">
+                    <img src="./img/foto.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="nome">
+                      <h6>name4</h6>
+                    </div>
+                    <div class="descricao">
+                      <p>Lorem ipsum dolor sit.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="cartao">
-                <div class="foto">
-                  <img src="./img/foto.png" alt="" />
-                </div>
-                <div class="info">
-                  <div class="nome">
-                    <h6>name</h6>
-                  </div>
-                  <div class="descricao">
-                    <p>Lorem ipsum dolor sit.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cartao">
-                <div class="foto">
-                  <img src="./img/foto.png" alt="" />
-                </div>
-                <div class="info">
-                  <div class="nome">
-                    <h6>name</h6>
-                  </div>
-                  <div class="descricao">
-                    <p>Lorem ipsum dolor sit.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cartao">
-                <div class="foto">
-                  <img src="./img/foto.png" alt="" />
-                </div>
-                <div class="info">
-                  <div class="nome">
-                    <h6>name</h6>
-                  </div>
-                  <div class="descricao">
-                    <p>Lorem ipsum dolor sit.</p>
-                  </div>
-                </div>
+              <div class="btn-avancar controle">
+                <img src="./img/botao-avancar.png" alt="" />
               </div>
             </div>
           </div>
@@ -401,7 +424,12 @@
         </div>
       </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.js" integrity="sha512-gAcB+wjrzbVlvnKqeqTSDTU6e7bPOiFCAe/bnJ8KXc99HFB7ApCoLMsk0+x3cBXh6+Vbt4gTf10DcJmKMUistA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.js"
+      integrity="sha512-gAcB+wjrzbVlvnKqeqTSDTU6e7bPOiFCAe/bnJ8KXc99HFB7ApCoLMsk0+x3cBXh6+Vbt4gTf10DcJmKMUistA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
