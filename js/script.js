@@ -4,30 +4,6 @@ btnMenuMobile.addEventListener('click', function () {
   iconeMobile.classList.toggle('ativo')
 })
 
-// const caroussel = document.querySelector('.caroucel');
-// //É mobile first então vai mostrar 1 slide com a menor resolução
-// new Glider(caroussel,{
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   draggable: true,
-//   arrows:{
-//     prev: ".avanca",
-//     next: ".volta"
-//   },
-//   scrollLock:true,
-//   responsive:[{
-//     breakpoint: 600,
-//     settings:{
-//       slidesToShow: 2,
-//       slidesToScroll:2
-//     },
-//     breakpoint: 900,
-//     settings:{
-//       slidesToShow: 3,
-//       slidesToScroll:3
-//     },
-//   }]
-// })
 const carousselGameplay = document.querySelector('.conteudoCaroussel')
 //É mobile first então vai mostrar 1 slide com a menor resolução
 new Glider(carousselGameplay, {
@@ -39,20 +15,6 @@ new Glider(carousselGameplay, {
     next: '.caroussel-gameplay .btn-avancar'
   },
   scrollLock: true,
-  responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      },
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
 })
 const carousselCharacters = document.querySelector('section.characters .lista')
 new Glider(carousselCharacters, {
@@ -81,7 +43,7 @@ new Glider(carousselCharacters, {
 })
 const carousselTeam = document.querySelector('section.team .cartoes')
 new Glider(carousselTeam, {
-  slidesToShow: 4,
+  slidesToShow: 1,
   slidesToScroll: 1,
   draggable: true,
   scrollLock: true,
@@ -90,6 +52,12 @@ new Glider(carousselTeam, {
     next: '.caroussel-team .btn-avancar'
   },
   responsive: [
+    {
+      breakpoint:576,
+      settings:{
+        slidesToShow: 2
+      }
+    },
     {
       breakpoint: 768,
       settings: {
@@ -104,4 +72,22 @@ new Glider(carousselTeam, {
     }
   ]
 })
+// const bgTopo = document.querySelector('section.topo video source')
+// const bgCharacters = document.querySelector('section.characters video source')
+// const bgGameplay = document.querySelector('section.gameplay.roadmap video source')
+// const bgTeam = document.querySelector('section.team video source')
+// const bgTokenomics = document.querySelector('section.tokenomics video source')
+// const bgRodape = document.querySelector('section.rodape video source')
+// const resolucao = window.innerWidth
+
+// bgTopo.setAttribute('src','videos/topo.mp4')
+// window.onload =  function fundos(){
+//   if (resolucao >= 768 ){
+//     bgTopo.innerHTML('<source src="videos/mobile/topo.mp4" type="video/mp4" />')
+//   }else{
+//     bgTopo.setAttribute('src','videos/mobile/topo.mp4')
+//   }
+// }
+
 // https://desenvolvimentoparaweb.com/javascript/gliderjs-slider-carousel/
+
