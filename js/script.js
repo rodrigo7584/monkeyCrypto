@@ -14,7 +14,7 @@ new Glider(carousselGameplay, {
     prev: '.caroussel-gameplay .btn-voltar',
     next: '.caroussel-gameplay .btn-avancar'
   },
-  scrollLock: true,
+  scrollLock: true
 })
 const carousselCharacters = document.querySelector('section.characters .lista')
 new Glider(carousselCharacters, {
@@ -28,7 +28,7 @@ new Glider(carousselCharacters, {
   },
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 576,
       settings: {
         slidesToShow: 2
       }
@@ -53,8 +53,8 @@ new Glider(carousselTeam, {
   },
   responsive: [
     {
-      breakpoint:576,
-      settings:{
+      breakpoint: 576,
+      settings: {
         slidesToShow: 2
       }
     },
@@ -78,7 +78,6 @@ new Glider(carousselTeam, {
 // const bgTeam = document.querySelector('section.team video source')
 // const bgTokenomics = document.querySelector('section.tokenomics video source')
 // const bgRodape = document.querySelector('section.rodape video source')
-// const resolucao = window.innerWidth
 
 // bgTopo.setAttribute('src','videos/topo.mp4')
 // window.onload =  function fundos(){
@@ -89,5 +88,34 @@ new Glider(carousselTeam, {
 //   }
 // }
 
-// https://desenvolvimentoparaweb.com/javascript/gliderjs-slider-carousel/
+const bg768 = document.querySelectorAll('video.r768 ')
+const bg576 = document.querySelectorAll('video.r576 ')
+const bg401 = document.querySelectorAll('video.r401 ')
+const bg360 = document.querySelectorAll('video.r360 ')
+const resolucao = window.outerWidth
 
+window.onload = function fundos() {
+  if (resolucao >= 768) {
+    bg768.forEach(function (video) {
+      video.classList.add('mostrar')
+      video.classList.remove('esconder')
+    })
+  } else if (resolucao >= 576 && resolucao <= 767) {
+    bg576.forEach(function (video) {
+      video.classList.add('mostrar')
+      video.classList.remove('esconder')
+    })
+  } else if (resolucao >= 401 && resolucao <= 575) {
+    bg401.forEach(function (video) {
+      video.classList.add('mostrar')
+      video.classList.remove('esconder')
+    })
+  } else if (resolucao <= 400) {
+    bg360.forEach(function (video) {
+      video.classList.add('mostrar')
+      video.classList.remove('esconder')
+    })
+  }
+}
+
+// https://desenvolvimentoparaweb.com/javascript/gliderjs-slider-carousel/
