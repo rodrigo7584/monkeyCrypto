@@ -223,7 +223,7 @@ section.characters .conteudo .lista .box .char {
 /*GAMEPLAY*/
 section.gameplay {
   height: calc(100vw / 1.106);
-  display: grid;
+  /* display: grid; */
   align-items: center;
 }
 section.gameplay .conteudoGameplay {
@@ -294,6 +294,7 @@ section.team .conteudo .cartao .foto img {
   width: 150px;
   outline: 2px solid yellow;
   outline-offset: 5px;
+  -moz-ou
   border-radius: 100%;
 }
 section.team .conteudo .cartao h6 {

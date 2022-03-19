@@ -72,50 +72,100 @@ new Glider(carousselTeam, {
     }
   ]
 })
-// const bgTopo = document.querySelector('section.topo video source')
-// const bgCharacters = document.querySelector('section.characters video source')
-// const bgGameplay = document.querySelector('section.gameplay.roadmap video source')
-// const bgTeam = document.querySelector('section.team video source')
-// const bgTokenomics = document.querySelector('section.tokenomics video source')
-// const bgRodape = document.querySelector('section.rodape video source')
 
-// bgTopo.setAttribute('src','videos/topo.mp4')
-// window.onload =  function fundos(){
-//   if (resolucao >= 768 ){
-//     bgTopo.innerHTML('<source src="videos/mobile/topo.mp4" type="video/mp4" />')
-//   }else{
-//     bgTopo.setAttribute('src','videos/mobile/topo.mp4')
+const resolucao = window.outerWidth
+const topo = document.querySelector('.video-topo')
+const gameplay = document.querySelector('.video-gameplay')
+const team = document.querySelector('.video-team')
+
+if (resolucao >= 768) {
+  topo.innerHTML = `
+  <video muted autoplay loop class="bg_video">
+    <source src="./videos/topo.mp4" type="video/mp4" />
+  </video>
+  `
+  gameplay.innerHTML = `
+  <video muted autoplay loop class="bg_video">
+    <source src="./videos/gameplayRoadmap.mp4" type="video/mp4" />
+  </video>
+  `
+  team.innerHTML = `
+  <video muted autoplay loop class="bg_video">
+        <source src="./videos/team.mp4" type="video/mp4" />
+      </video>
+  `
+} else if (resolucao >= 576 && resolucao <= 767) {
+  topo.innerHTML = `
+  <video muted autoplay loop class="bg_video">
+    <source src="./videos/topo.mp4" type="video/mp4" />
+  </video>
+  `
+  gameplay.innerHTML = `
+  <video muted autoplay loop class="bg_video">
+    <source src="./videos/576/gameplayRoadmap.mp4" type="video/mp4" />
+  </video>
+  `
+  team.innerHTML = `
+  <video muted autoplay loop class="bg_video">
+        <source src="./videos/576/team.mp4" type="video/mp4" />
+      </video>
+  `
+} else if (resolucao >= 401 && resolucao <= 575) {
+  topo.innerHTML = `
+  <video muted autoplay loop class="bg_video">
+    <source src="./videos/401/topo.mp4" type="video/mp4" />
+  </video>
+  `
+  gameplay.innerHTML = `
+  <video muted autoplay loop class="bg_video">
+    <source src="./videos/401/gameplayRoadmap.mp4" type="video/mp4" />
+  </video>
+      `
+  team.innerHTML = `
+  <video muted autoplay loop class="bg_video">
+    <source src="./videos/401/team.mp4" type="video/mp4" />
+  </video>
+  `
+} else if (resolucao <= 400) {
+  topo.innerHTML = `
+  <video muted autoplay loop class="bg_video">
+    <source src="./videos/401/topo.mp4" type="video/mp4" />
+  </video>
+  `
+  gameplay.innerHTML = `
+    <video muted autoplay loop class="bg_video">
+      <source src="./videos/401/gameplayRoadmap.mp4" type="video/mp4" />
+    </video>
+    `
+  team.innerHTML = `
+    <video muted autoplay loop class="bg_video">
+      <source src="./videos/401/team.mp4" type="video/mp4" />
+    </video>
+    `
+}
+
+// window.onload = function fundos() {
+//   if (resolucao >= 768) {
+//     bg768.forEach(function (video) {
+//       video.classList.add('mostrar')
+//       video.classList.remove('esconder')
+//     })
+//   } else if (resolucao >= 576 && resolucao <= 767) {
+//     bg576.forEach(function (video) {
+//       video.classList.add('mostrar')
+//       video.classList.remove('esconder')
+//     })
+//   } else if (resolucao >= 401 && resolucao <= 575) {
+//     bg401.forEach(function (video) {
+//       video.classList.add('mostrar')
+//       video.classList.remove('esconder')
+//     })
+//   } else if (resolucao <= 400) {
+//     bg360.forEach(function (video) {
+//       video.classList.add('mostrar')
+//       video.classList.remove('esconder')
+//     })
 //   }
 // }
-
-const bg768 = document.querySelectorAll('video.r768 ')
-const bg576 = document.querySelectorAll('video.r576 ')
-const bg401 = document.querySelectorAll('video.r401 ')
-const bg360 = document.querySelectorAll('video.r360 ')
-const resolucao = window.outerWidth
-
-window.onload = function fundos() {
-  if (resolucao >= 768) {
-    bg768.forEach(function (video) {
-      video.classList.add('mostrar')
-      video.classList.remove('esconder')
-    })
-  } else if (resolucao >= 576 && resolucao <= 767) {
-    bg576.forEach(function (video) {
-      video.classList.add('mostrar')
-      video.classList.remove('esconder')
-    })
-  } else if (resolucao >= 401 && resolucao <= 575) {
-    bg401.forEach(function (video) {
-      video.classList.add('mostrar')
-      video.classList.remove('esconder')
-    })
-  } else if (resolucao <= 400) {
-    bg360.forEach(function (video) {
-      video.classList.add('mostrar')
-      video.classList.remove('esconder')
-    })
-  }
-}
 
 // https://desenvolvimentoparaweb.com/javascript/gliderjs-slider-carousel/
