@@ -1,3 +1,4 @@
+
 const btnMenuMobile = document.querySelector('.navbar-toggler')
 const iconeMobile = document.querySelector('.icone-menu-mobile')
 btnMenuMobile.addEventListener('click', function () {
@@ -73,11 +74,11 @@ new Glider(carousselTeam, {
   ]
 })
 
-const resolucao = window.outerWidth
+let resolucao = window.outerWidth
 const topo = document.querySelector('.video-topo')
 const gameplay = document.querySelector('.video-gameplay')
 const team = document.querySelector('.video-team')
-
+function recarregar(resolucao){
 if (resolucao >= 768) {
   topo.innerHTML = `
   <video muted autoplay loop class="bg_video">
@@ -144,28 +145,10 @@ if (resolucao >= 768) {
     `
 }
 
-// window.onload = function fundos() {
-//   if (resolucao >= 768) {
-//     bg768.forEach(function (video) {
-//       video.classList.add('mostrar')
-//       video.classList.remove('esconder')
-//     })
-//   } else if (resolucao >= 576 && resolucao <= 767) {
-//     bg576.forEach(function (video) {
-//       video.classList.add('mostrar')
-//       video.classList.remove('esconder')
-//     })
-//   } else if (resolucao >= 401 && resolucao <= 575) {
-//     bg401.forEach(function (video) {
-//       video.classList.add('mostrar')
-//       video.classList.remove('esconder')
-//     })
-//   } else if (resolucao <= 400) {
-//     bg360.forEach(function (video) {
-//       video.classList.add('mostrar')
-//       video.classList.remove('esconder')
-//     })
-//   }
-// }
-
+}
+recarregar(resolucao)
+window.addEventListener('resize',function(){
+  resolucaoAtual = window.outerWidth
+  recarregar(resolucaoAtual)
+})
 // https://desenvolvimentoparaweb.com/javascript/gliderjs-slider-carousel/
