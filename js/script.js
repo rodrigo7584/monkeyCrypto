@@ -1,3 +1,9 @@
+document.documentElement.onload = function () {
+  document.getElementById('loader').style.display = 'block'
+}
+window.onload = function () {
+  document.getElementById('loader').style.display = 'none'
+}
 
 const btnMenuMobile = document.querySelector('.navbar-toggler')
 const iconeMobile = document.querySelector('.icone-menu-mobile')
@@ -78,76 +84,75 @@ let resolucao = window.outerWidth
 const topo = document.querySelector('.video-topo')
 const gameplay = document.querySelector('.video-gameplay')
 const team = document.querySelector('.video-team')
-function recarregar(resolucao){
-if (resolucao >= 768) {
-  topo.innerHTML = `
+function recarregar(resolucao) {
+  if (resolucao >= 768) {
+    topo.innerHTML = `
   <video muted autoplay loop class="bg_video">
     <source src="./videos/topo.mp4" type="video/mp4" />
   </video>
   `
-  gameplay.innerHTML = `
+    gameplay.innerHTML = `
   <video muted autoplay loop class="bg_video">
     <source src="./videos/gameplayRoadmap.mp4" type="video/mp4" />
   </video>
   `
-  team.innerHTML = `
+    team.innerHTML = `
   <video muted autoplay loop class="bg_video">
         <source src="./videos/team.mp4" type="video/mp4" />
       </video>
   `
-} else if (resolucao >= 576 && resolucao <= 767) {
-  topo.innerHTML = `
+  } else if (resolucao >= 576 && resolucao <= 767) {
+    topo.innerHTML = `
   <video muted autoplay loop class="bg_video">
     <source src="./videos/topo.mp4" type="video/mp4" />
   </video>
   `
-  gameplay.innerHTML = `
+    gameplay.innerHTML = `
   <video muted autoplay loop class="bg_video">
     <source src="./videos/576/gameplayRoadmap.mp4" type="video/mp4" />
   </video>
   `
-  team.innerHTML = `
+    team.innerHTML = `
   <video muted autoplay loop class="bg_video">
         <source src="./videos/576/team.mp4" type="video/mp4" />
       </video>
   `
-} else if (resolucao >= 401 && resolucao <= 575) {
-  topo.innerHTML = `
+  } else if (resolucao >= 401 && resolucao <= 575) {
+    topo.innerHTML = `
   <video muted autoplay loop class="bg_video">
     <source src="./videos/401/topo.mp4" type="video/mp4" />
   </video>
   `
-  gameplay.innerHTML = `
+    gameplay.innerHTML = `
   <video muted autoplay loop class="bg_video">
     <source src="./videos/401/gameplayRoadmap.mp4" type="video/mp4" />
   </video>
       `
-  team.innerHTML = `
+    team.innerHTML = `
   <video muted autoplay loop class="bg_video">
     <source src="./videos/401/team.mp4" type="video/mp4" />
   </video>
   `
-} else if (resolucao <= 400) {
-  topo.innerHTML = `
+  } else if (resolucao <= 400) {
+    topo.innerHTML = `
   <video muted autoplay loop class="bg_video">
     <source src="./videos/401/topo.mp4" type="video/mp4" />
   </video>
   `
-  gameplay.innerHTML = `
+    gameplay.innerHTML = `
     <video muted autoplay loop class="bg_video">
       <source src="./videos/401/gameplayRoadmap.mp4" type="video/mp4" />
     </video>
     `
-  team.innerHTML = `
+    team.innerHTML = `
     <video muted autoplay loop class="bg_video">
       <source src="./videos/401/team.mp4" type="video/mp4" />
     </video>
     `
-}
-
+  }
 }
 recarregar(resolucao)
-window.addEventListener('resize',function(){
+window.addEventListener('resize', function () {
   resolucaoAtual = window.outerWidth
   recarregar(resolucaoAtual)
 })
