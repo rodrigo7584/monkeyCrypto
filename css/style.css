@@ -10,9 +10,19 @@
   justify-content: center;
   justify-items: center;
 }
-#loader img {
-  height: 200px;
+#loader .circulo {
+  background-color: goldenrod;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
 }
+#loader img {
+  height: 100px;
+}
+
 .lds-ellipsis {
   display: inline-block;
   position: relative;
@@ -80,6 +90,10 @@
 @font-face {
   font-family: kg;
   src: url('../fonts/KGInimitableOriginal.ttf');
+}
+.desativado {
+  cursor: not-allowed !important;
+  filter: grayscale(1) !important;
 }
 .mostrar {
   display: block;
@@ -747,14 +761,14 @@ section.rodape form button:hover {
   }
   section.topo .conteudo {
     width: 80%;
-    padding: 20px;
+    padding: 0px;
   }
   section.topo .conteudo .btn-play {
     margin: 0px;
   }
   section.topo .conteudo h1 {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
   }
   div.cipo img {
     margin-top: -30px;
@@ -808,6 +822,15 @@ section.rodape form button:hover {
   }
 }
 @media screen and (max-width: 575px) {
+  section.topo .conteudo .btn-play {
+    padding: 10px 24px;
+    font-size: 15px !important;
+  }
+  section.topo .conteudo .stores img {
+    margin: 3px;
+    height: 35px;
+    width: 85px;
+  }
   section.topo {
     height: calc(150vw / 1.759);
   }
@@ -886,11 +909,14 @@ section.rodape form button:hover {
   .navbar-toggler {
     padding: 5px;
   }
+  section.topo .conteudo h1 {
+    font-size: 15px;
+  }
   h2 {
     font-size: 22px !important;
   }
   section.topo .conteudo {
-    padding: 0px 20px;
+    padding: 0px;
   }
   div.cipo img {
     margin-top: -15px;
