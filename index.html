@@ -232,12 +232,56 @@
       <div class="container-fluid">
         <div class="row">
           <div class="conteudoRoadmap">
+            <img src="./img/cursor-arrow.svg" alt="" class="mouse" />
+            <div class="mouse2"></div>
             <h2>checklist</h2>
-            <img class="mapa" src="./img/map.svg" alt="" />
+            <img
+              onclick="checklistModal.show()"
+              class="mapa"
+              src="./img/map.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </section>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="checklistModal"
+      tabindex="-1"
+      aria-labelledby="checklistModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img
+            class="btn-fechar"
+            src="./img/close.svg"
+            onclick="checklistModal.hide()"
+          />
+          <ul>
+            <li class="checked">Desenvolvimento do modelo de negócios</li>
+            <li class="checked">Desenvolvimento do ecossistema financeiro</li>
+            <li class="checked">Roteiro do jogo</li>
+            <li>Início das divulgações</li>
+            <li>Recrutamento do time de suporte a comunidade</li>
+            <li>Versão Demo</li>
+            <li>Pré-venda dos tokens</li>
+            <li>Distribuição dos tokens</li>
+            <li>Listagens Coinmarketcap/Coingecko</li>
+            <li>Venda Mystery Box</li>
+            <li>Venda pública dos tokens</li>
+            <li>Lançamento do game (modo campanha)</li>
+            <li>Versão mobile</li>
+            <li>Novos personagens</li>
+            <li>Liberação do novos modos no game (PvP, Time Trial)</li>
+            <li>Liberação do Leaderboard/Ranking</li>
+            <li>Marketplace</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <section class="team">
       <span class="video-team"></span>
       <div class="container height-full">
@@ -396,6 +440,17 @@
               </div>
               <div class="numero">
                 <p>2,000,000</p>
+              </div>
+            </div>
+            <div class="itens presale">
+              <div class="titulo">
+                <p>Pre sale</p>
+              </div>
+              <div class="porcentagem">
+                <p>8%</p>
+              </div>
+              <div class="numero">
+                <p>4,000,000</p>
               </div>
             </div>
           </div>

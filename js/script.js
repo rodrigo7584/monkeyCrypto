@@ -156,4 +156,7 @@ window.addEventListener('resize', function () {
   resolucaoAtual = window.outerWidth
   recarregar(resolucaoAtual)
 })
-// https://desenvolvimentoparaweb.com/javascript/gliderjs-slider-carousel/
+
+const checklistModal = new bootstrap.Modal(
+  document.querySelector('#checklistModal')
+)

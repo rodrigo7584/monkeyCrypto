@@ -369,16 +369,111 @@ section.gameplay .conteudoCaroussel.glider {
   width: 100%;
 }
 section.roadmap .conteudoRoadmap {
+  position: relative;
   z-index: 1;
   padding: 50px 0px;
   align-self: center;
   display: grid;
 }
+section.roadmap .conteudoRoadmap .mouse {
+  position: absolute;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  animation: clicando 2s infinite;
+  transition: none;
+  display: none;
+}
+section.roadmap .conteudoRoadmap .mouse2 {
+  content: url('../img/cursor-pointer.svg');
+  position: absolute;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  /* animation: clicando2 2s infinite; */
+}
+@keyframes clicando2 {
+  0% {
+    content: url('../img/cursor-pointer.svg');
+  }
+  50% {
+    content: url('../img/cursor-pointer2.svg');
+  }
+  60% {
+    content: url('../img/cursor-pointer2.svg');
+  }
+  100% {
+    content: url('../img/cursor-pointer.svg');
+  }
+}
+@keyframes clicando {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 section.roadmap .conteudoRoadmap img.mapa {
   justify-self: center;
   width: 50%;
 }
+section.roadmap .conteudoRoadmap img.mapa:hover {
+  cursor: pointer;
+}
 /*FIM GAMEPLAY ROADMAP*/
+/*MODAL ROADMAP*/
+#checklistModal .modal-content {
+  padding: 155px 100px 95px 65px;
+  border-radius: 15px;
+  background-color: transparent;
+  background-image: url('../img/checklist.svg');
+  border: none;
+}
+#checklistModal .modal-content img.btn-fechar {
+  position: absolute;
+  height: 35px;
+  right: 30px;
+  top: 50px;
+}
+#checklistModal .modal-content img.btn-fechar:hover {
+  cursor: pointer;
+}
+#checklistModal .modal-content ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0;
+}
+#checklistModal .modal-content ul li:before {
+  content: url('../img/checkbox-unchecked.svg');
+  display: inline-block;
+  width: 20px;
+  justify-self: center;
+  margin-right: 5px;
+}
+#checklistModal .modal-content ul li.checked:before {
+  content: url('../img/checkbox-checked-cinza.svg');
+}
+#checklistModal .modal-content ul li {
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-family: 'Comfortaa';
+}
+#checklistModal .modal-content ul li.checked {
+  color: #7f7f7f;
+  text-decoration: line-through;
+}
+/*FIM MODAL*/
 /*TEAM*/
 section.team {
   height: calc(100vw / 2.384);
@@ -487,6 +582,10 @@ section.tokenomics .itens.market {
   left: 22%;
   top: 42%;
 }
+section.tokenomics .itens.presale {
+  left: 77%;
+  top: 48%;
+}
 section.tokenomics .conteudo .itens.burn .titulo p::before {
   background: linear-gradient(to left, #1596e2, #6fcad9);
 }
@@ -507,6 +606,9 @@ section.tokenomics .conteudo .itens.market .titulo p::before {
 }
 section.tokenomics .conteudo .itens.advisor .titulo p::before {
   background: linear-gradient(to left, #56b3ae, #59f5a8);
+}
+section.tokenomics .conteudo .itens.presale .titulo p::before {
+  background: linear-gradient(to left, #eecd38, #e78300);
 }
 /*FIM TOKENOMICS*/
 /*RODAPE*/
@@ -911,6 +1013,16 @@ section.rodape form button:hover {
   section.gameplay {
     height: calc(160vw / 1.106);
   }
+  section.roadmap .conteudoRoadmap .mouse {
+    display: block;
+  }
+  #checklistModal .modal-content {
+    padding: 125px 87px 60px 60px;
+  }
+  #checklistModal .modal-content ul li {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
   section.tokenomics {
     height: calc(135vw / 2.159);
     background: linear-gradient(
@@ -954,7 +1066,15 @@ section.rodape form button:hover {
   }
   section.tokenomics .itens.airdrop {
     left: 71%;
-    top: 36%;
+    top: 34%;
+  }
+  section.tokenomics .itens.game-incentives {
+    top: 71%;
+    left: 74%;
+  }
+  section.tokenomics .itens.presale {
+    left: 77%;
+    top: 52%;
   }
   section.tokenomics .itens.liquidity {
     left: 17%;
@@ -1005,6 +1125,16 @@ section.rodape form button:hover {
   section.team .conteudo .cartao .foto img {
     height: 130px;
     width: 130px;
+  }
+  section.tokenomics .conteudo .titulo p {
+    font-size: 11px;
+  }
+  section.tokenomics .conteudo .numero p {
+    font-size: 9px;
+  }
+  section.tokenomics .conteudo .titulo p::before {
+    width: 10px;
+    height: 10px;
   }
   section.rodape .logo {
     height: 95px;
