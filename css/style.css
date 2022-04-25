@@ -1,3 +1,6 @@
+img#mike {
+  transform: scale(1.2);
+}
 #loader {
   max-width: 100%;
   height: 100vh;
@@ -200,7 +203,7 @@ section.topo .conteudo {
   margin: 0 auto;
   justify-items: center;
   text-align: center;
-  width: 100%;
+  width: 65%;
 }
 section.topo .conteudo h1 {
   text-align: center;
@@ -212,10 +215,16 @@ section.topo .conteudo h2 {
 section.topo .conteudo h3 {
   color: #fff;
   font-size: 18px;
+  font-family: kg;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient( 90deg, rgba(207, 92, 43, 0.55) 0%, rgba(89, 23, 62, 0.55) 100% );
 }
 section.topo .conteudo p {
   color: #fff;
   font-size: 18px;
+ 
 }
 section.topo .conteudo .btn-play {
   margin-bottom: 10px;
@@ -333,7 +342,7 @@ section.characters .conteudo .lista .box .char {
   height: 450px;
 }
 section.characters .conteudo .lista .box .char img {
-  max-height: 80%;
+  max-height: 90%;
   max-width: calc(100% - 10px);
 }
 /*FIM CHARACTERS*/
@@ -383,28 +392,6 @@ section.roadmap .conteudoRoadmap .mouse {
   animation: clicando 2s infinite;
   transition: none;
   display: none;
-}
-section.roadmap .conteudoRoadmap .mouse2 {
-  content: url('../img/cursor-pointer.svg');
-  position: absolute;
-  height: 20px;
-  left: 50%;
-  top: 50%;
-  /* animation: clicando2 2s infinite; */
-}
-@keyframes clicando2 {
-  0% {
-    content: url('../img/cursor-pointer.svg');
-  }
-  50% {
-    content: url('../img/cursor-pointer2.svg');
-  }
-  60% {
-    content: url('../img/cursor-pointer2.svg');
-  }
-  100% {
-    content: url('../img/cursor-pointer.svg');
-  }
 }
 @keyframes clicando {
   0% {
@@ -758,12 +745,16 @@ section.rodape form button:hover {
     top: 100px;
     z-index: 5;
   }
+  section.topo .conteudo {
+    width: 70%;
+  }
   section.topo .conteudo .btn-play {
     margin-bottom: 10px;
   }
   section.topo .conteudo .btn-play {
     padding: 10px 35px;
     font-size: 20px !important;
+    margin-left: 0px;
   }
   section.topo .conteudo h1 {
     font-size: 22px;
@@ -898,7 +889,6 @@ section.rodape form button:hover {
     height: 70px;
   }
   section.topo .conteudo {
-    width: 100%;
     padding: 0px;
   }
   section.topo .conteudo .btn-play {
@@ -911,7 +901,9 @@ section.rodape form button:hover {
     font-size: 12px;
   }
   section.topo .conteudo h3 {
-    margin-bottom: 0px;
+    margin: 5px 0px;
+    padding: 6px 5px;
+    border-radius: 3px;
     font-size: 13px;
   }
   section.topo .conteudo p {
@@ -981,14 +973,9 @@ section.rodape form button:hover {
   .navbar-brand {
     padding-bottom: 0px;
   }
-  section.topo .conteudo .btn-play {
-    padding: 10px 24px;
-    font-size: 15px !important;
-  }
-  section.topo .conteudo .stores img {
-    margin: 3px;
-    height: 35px;
-    width: 85px;
+  .row.row-conteudo-topo {
+    height: calc((150vw / 1.759) - 83px);
+    align-items: center;
   }
   section.topo {
     height: calc(150vw / 1.759);
@@ -996,8 +983,15 @@ section.rodape form button:hover {
   section.topo .conteudo .btn-play {
     padding: 0px 24px;
     margin-bottom: 5px;
+       font-size: 15px !important;
+  }
+  section.topo .conteudo .stores img {
+    margin: 3px;
+    height: 35px;
+    width: 85px;
   }
   section.topo .conteudo {
+    width: 85%;
     padding: 0px 5px;
   }
   section.topo .conteudo h1 {
@@ -1006,6 +1000,9 @@ section.rodape form button:hover {
   section.topo .conteudo h2 {
     font-size: 11px;
     margin-bottom: 0;
+  }
+  section.topo .conteudo h3 {
+    height: fit-content;
   }
   section.characters {
     height: calc(123vw / 1.435);
@@ -1100,12 +1097,18 @@ section.rodape form button:hover {
   .navbar-toggler {
     padding: 5px;
   }
+  section.topo .conteudo {
+    width: 90%;
+  }
   section.topo .conteudo h1 {
     font-size: 15px;
   }
   section.topo .conteudo h2 {
     font-size: 10px;
   }
+  section.topo .social img {
+    height: 25px;
+}
   h2 {
     font-size: 22px;
   }

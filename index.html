@@ -33,7 +33,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <title>Crypto Monkey</title>
+    <title>Ape Island Game</title>
   </head>
   <body>
     <div id="loader">
@@ -77,13 +77,13 @@
             >
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">characters</a>
+                  <a class="nav-link" href="#characters">characters</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">gameplay</a>
+                  <a class="nav-link" href="#gameplay">gameplay</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">team</a>
+                  <a class="nav-link" href="#team">team</a>
                 </li>
                 <li class="nav-item sumir-991">
                   <a class="nav-link" href="index.php#topo">
@@ -91,10 +91,10 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">checklist</a>
+                  <a class="nav-link" href="#checklist">checklist</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">tokenomics</a>
+                  <a class="nav-link" href="#tokenomics">tokenomics</a>
                 </li>
                 <li class="nav-item">
                   <div class="stores sumir-991 desativado">
@@ -112,28 +112,33 @@
         </nav>
       </header>
       <div class="container">
-        <div class="row">
+        <div class="row row-conteudo-topo">
           <div class="conteudo">
             <a href="#">
               <span class="btn-play">play</span>
             </a>
             <h1>
-              Os macacos vão invadir a blockchain. A era dos primatas está
-              começando e vem cheia de recompensas.
+              THE AGE OF THE APES IS BEGINNING AND IT COMES FULL OF REWARDS.
             </h1>
-            <h2>
+            <!-- <h2>
               Os macacos chegaram e o que eles mais querem é aventura e muitas
               bananas.
-            </h2>
+            </h2> -->
             <p>
-              Escolha seu personagem, explore a Ape Island em missões para
-              coletar bananas em tarefas diárias e obter cada vez mais lucro.
+              Choose your character, explore the archipelago to collect bananas
+              in daily tasks and get more and more profit.
             </p>
             <h3>TOKEN PRE-SALE: 05.09.22</h3>
             <div class="social">
-              <a href="#"><img src="./img/icone-discord.svg" alt="" /></a>
-              <a href="#"><img src="./img/icone-telegram.svg" alt="" /></a>
-              <a href="#"><img src="./img/icone-twitter.svg" alt="" /></a>
+              <a href="https://discord.gg/d7vtqmYg3s" target="_blank"
+                ><img src="./img/icone-discord.svg" alt=""
+              /></a>
+              <a href="https://t.me/apeislandgameann" target="_blank"
+                ><img src="./img/icone-telegram.svg" alt=""
+              /></a>
+              <a href="https://twitter.com/apeislandgame" target="_blank"
+                ><img src="./img/icone-twitter.svg" alt=""
+              /></a>
             </div>
             <div class="stores mostrar-991 desativado">
               <a href="#"><img src="./img/appStore.svg" alt="" /></a>
@@ -146,7 +151,7 @@
     <div class="cipo">
       <img src="./img/cipo.svg" alt="" />
     </div>
-    <section class="characters">
+    <section id="characters" class="characters">
       <video muted autoplay loop class="bg_video">
         <source src="./videos/characters.mp4" type="video/mp4" />
       </video>
@@ -177,20 +182,20 @@
                 </div>
                 <div class="box">
                   <div class="placa">
-                    <p>Steeve Brain</p>
+                    <p>Big Mike</p>
                   </div>
                   <div class="char">
-                    <img src="./img/Monkey_Nerd2.png" alt="" />
+                    <img id="mike" src="./img/Monkey_Gamer.png" alt="" />
                   </div>
                 </div>
-                <div class="box">
+                <!-- <div class="box">
                   <div class="placa">
                     <p>Joey Beats</p>
                   </div>
                   <div class="char">
                     <img src="./img/Monkey_Raper2.png" alt="" />
                   </div>
-                </div>
+                </div> -->
               </div>
               <div class="btn-avancar controle">
                 <img src="./img/botao-avancar.png" alt="" />
@@ -200,7 +205,7 @@
         </div>
       </div>
     </section>
-    <section class="gameplay roadmap">
+    <section id="gameplay" class="gameplay roadmap">
       <span class="video-gameplay"></span>
       <div class="container">
         <div class="row">
@@ -229,11 +234,10 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
+      <div id="checklist" class="container-fluid">
         <div class="row">
           <div class="conteudoRoadmap">
             <img src="./img/cursor-arrow.svg" alt="" class="mouse" />
-            <div class="mouse2"></div>
             <h2>checklist</h2>
             <img
               onclick="checklistModal.show()"
@@ -282,7 +286,7 @@
         </div>
       </div>
     </div>
-    <section class="team">
+    <section id="team" class="team">
       <span class="video-team"></span>
       <div class="container height-full">
         <div class="row height-full">
@@ -299,10 +303,10 @@
                   </div>
                   <div class="info">
                     <div class="nome">
-                      <h6>Steeve Brain</h6>
+                      <h6>Hernan González</h6>
                     </div>
                     <div class="descricao">
-                      <p>CEO</p>
+                      <p>COO</p>
                     </div>
                   </div>
                 </div>
@@ -312,27 +316,27 @@
                   </div>
                   <div class="info">
                     <div class="nome">
-                      <h6>Joey Beats</h6>
+                      <h6>Thiago O.</h6>
                     </div>
                     <div class="descricao">
-                      <p>COO</p>
+                      <p>CEO</p>
                     </div>
                   </div>
                 </div>
                 <div class="cartao">
                   <div class="foto">
-                    <img src="./img/monkey-nerd-face.png" alt="" />
+                    <img src="./img/monkey-gamer-face.png" alt="" />
                   </div>
                   <div class="info">
                     <div class="nome">
-                      <h6>Steeve Brain</h6>
+                      <h6>Jacob Davis</h6>
                     </div>
                     <div class="descricao">
-                      <p>Marketing</p>
+                      <p>Developer</p>
                     </div>
                   </div>
                 </div>
-                <div class="cartao">
+                <!-- <div class="cartao">
                   <div class="foto">
                     <img src="./img/monkey-raper-face.png" alt="" />
                   </div>
@@ -344,7 +348,7 @@
                       <p>Developer</p>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
               <div class="btn-avancar controle">
                 <img src="./img/botao-avancar.png" alt="" />
@@ -354,7 +358,7 @@
         </div>
       </div>
     </section>
-    <section class="tokenomics">
+    <section id="tokenomics" class="tokenomics">
       <video muted autoplay loop class="bg_video">
         <source src="./videos/tokenomics.mp4" type="video/mp4" />
       </video>
@@ -467,22 +471,28 @@
             <div class="coluna">
               <img class="logo" src="./img/logo-caveira.png" alt="" />
               <div class="social">
-                <a href="#"><img src="./img/icone-discord.svg" alt="" /></a>
-                <a href="#"><img src="./img/icone-telegram.svg" alt="" /></a>
-                <a href="#"><img src="./img/icone-twitter.svg" alt="" /></a>
+                <a href="https://discord.gg/d7vtqmYg3s" target="_blank"
+                  ><img src="./img/icone-discord.svg" alt=""
+                /></a>
+                <a href="https://t.me/apeislandgameann" target="_blank"
+                  ><img src="./img/icone-telegram.svg" alt=""
+                /></a>
+                <a href="https://twitter.com/apeislandgame" target="_blank"
+                  ><img src="./img/icone-twitter.svg" alt=""
+                /></a>
               </div>
             </div>
             <div class="coluna">
               <ul class="submenu">
-                <li><a href="#">CHARACTERS</a></li>
-                <li><a href="#">GAMEPLAY</a></li>
-                <li><a href="#">CHECKLIST</a></li>
+                <li><a href="#characters">CHARACTERS</a></li>
+                <li><a href="#gameplay">GAMEPLAY</a></li>
+                <li><a href="#checklist">CHECKLIST</a></li>
               </ul>
             </div>
             <div class="coluna">
               <ul class="submenu">
-                <li><a href="#">TEAM</a></li>
-                <li><a href="#">TOKENOMICS</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#tokenomics">TOKENOMICS</a></li>
               </ul>
             </div>
             <div class="coluna">
