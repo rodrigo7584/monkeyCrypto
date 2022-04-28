@@ -82,13 +82,44 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#gameplay">gameplay</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#team">team</a>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Whitepaper
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://ape-island.gitbook.io/ape-island-game-pt/"
+                        >Action</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://ape-island.gitbook.io/ape-island-game-in/"
+                        >Another action</a
+                      >
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item sumir-991">
                   <a class="nav-link" href="index.php#topo">
                     <img class="logo" src="./img/logo-caveira.png" alt="" />
                   </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">team</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#checklist">checklist</a>
@@ -130,7 +161,7 @@
               Choose your character, explore the archipelago to collect bananas
               in daily tasks and get more and more profit.
             </p>
-            <h3>TOKEN PRE-SALE: 05.09.22</h3>
+            <h3>TOKEN PRE-SALE: 16.09.22</h3>
             <div class="social">
               <a href="https://discord.gg/d7vtqmYg3s" target="_blank"
                 ><img src="./img/icone-discord.svg" alt=""
@@ -267,23 +298,24 @@
             onclick="checklistModal.hide()"
           />
           <ul>
-            <li class="checked">Desenvolvimento do modelo de negócios</li>
-            <li class="checked">Desenvolvimento do ecossistema financeiro</li>
-            <li class="checked">Roteiro do jogo</li>
-            <li>Início das divulgações</li>
-            <li>Recrutamento do time de suporte a comunidade</li>
-            <li>Versão Demo</li>
-            <li>Pré-venda dos tokens</li>
-            <li>Distribuição dos tokens</li>
-            <li>Listagens Coinmarketcap/Coingecko</li>
-            <li>Venda Mystery Box</li>
-            <li>Venda pública dos tokens</li>
-            <li>Lançamento do game (modo campanha)</li>
-            <li>Versão mobile</li>
-            <li>Novos personagens</li>
-            <li>Liberação do novos modos no game (PvP, Time Trial)</li>
-            <li>Liberação do Leaderboard/Ranking</li>
-            <li>Marketplace</li>
+            <li class="checked">Business model development </li>
+            <li class="checked">Financial ecosystem development </li>
+            <li class="checked">Game script </li>
+            <li>Start of disclosures</li>
+            <li>Community support team recruitment</li>
+            <li>Demo version </li>
+            <li>Token pre-sale </li>
+            <li>Tokens distribution</li>
+            <li>Coinmarketcap/Coingecko Listings</li>
+            <li>Mystery Box Sale </li>
+            <li>Public sale of tokens</li>
+            <li>Game launch - PC version (campaign mode)</li>
+            <li>Mobile version (android) </li>
+            <li>New characters </li>
+            <li>Release of new game modes (PvP, Time Trial, Co-op) </li>
+            <li>Leaderboard/Ranking Release </li>
+            <li>Shopping</li>
+            <li>Mobile version (iOS)</li>
           </ul>
         </div>
       </div>
@@ -376,7 +408,7 @@
                 <p>2%</p>
               </div>
               <div class="numero">
-                <p>1,000,000</p>
+                <p>1,600,000</p>
               </div>
             </div>
             <div class="itens burn">
@@ -387,7 +419,7 @@
                 <p>2%</p>
               </div>
               <div class="numero">
-                <p>1,000,000</p>
+                <p>1,600,000</p>
               </div>
             </div>
             <div class="itens airdrop">
@@ -398,7 +430,7 @@
                 <p>2%</p>
               </div>
               <div class="numero">
-                <p>1,000,000</p>
+                <p>1,600,000</p>
               </div>
             </div>
             <div class="itens game-incentives">
@@ -412,7 +444,7 @@
                 <p>71%</p>
               </div>
               <div class="numero">
-                <p>37,500,000</p>
+                <p>56,800,000</p>
               </div>
             </div>
             <div class="itens devs">
@@ -423,7 +455,7 @@
                 <p>8%</p>
               </div>
               <div class="numero">
-                <p>4,000,000</p>
+                <p>6,400,000</p>
               </div>
             </div>
             <div class="itens liquidity">
@@ -434,7 +466,7 @@
                 <p>3%</p>
               </div>
               <div class="numero">
-                <p>1,500,000</p>
+                <p>2,400,000</p>
               </div>
             </div>
             <div class="itens market">
@@ -445,7 +477,7 @@
                 <p>4%</p>
               </div>
               <div class="numero">
-                <p>2,000,000</p>
+                <p>3,200,000</p>
               </div>
             </div>
             <div class="itens presale">
@@ -456,7 +488,7 @@
                 <p>8%</p>
               </div>
               <div class="numero">
-                <p>4,000,000</p>
+                <p>6,400,000</p>
               </div>
             </div>
           </div>
@@ -510,6 +542,21 @@
         </div>
       </div>
     </section>
+        <!-- 
+        MODAL DO FORMULARIO DE CONTATO
+        !-->
+        <div class="modal fade modal-resposta-contato">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h3>Mensagem enviada</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 
+        FIM MODAL DO FORMULARIO DE CONTATO
+        !-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.js"
       integrity="sha512-gAcB+wjrzbVlvnKqeqTSDTU6e7bPOiFCAe/bnJ8KXc99HFB7ApCoLMsk0+x3cBXh6+Vbt4gTf10DcJmKMUistA=="
