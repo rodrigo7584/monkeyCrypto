@@ -101,14 +101,14 @@
                       <a
                         class="dropdown-item"
                         href="https://ape-island.gitbook.io/ape-island-game-pt/"
-                        >Action</a
+                        >PT</a
                       >
                     </li>
                     <li>
                       <a
                         class="dropdown-item"
                         href="https://ape-island.gitbook.io/ape-island-game-in/"
-                        >Another action</a
+                        >EN</a
                       >
                     </li>
                   </ul>
@@ -161,7 +161,7 @@
               Choose your character, explore the archipelago to collect bananas
               in daily tasks and get more and more profit.
             </p>
-            <h3>TOKEN PRE-SALE: 16.09.22</h3>
+            <h3>TOKEN PRE-SALE: 05.16.22</h3>
             <div class="social">
               <a href="https://discord.gg/d7vtqmYg3s" target="_blank"
                 ><img src="./img/icone-discord.svg" alt=""
