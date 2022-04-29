@@ -189,13 +189,27 @@ section.topo .nav-link {
   font-family: kg;
   font-size: 20px;
   margin: 0px 10px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
+
 section.topo .nav-link:hover {
   filter: brightness(0.9);
   transform: scale(0.98);
 }
 section.topo .nav-link .logo {
   height: 150px;
+}
+section.topo .dropdown-menu {
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(207, 92, 43, 0.55) 0%,
+    rgba(89, 23, 62, 0.55) 100%
+  );
+}
+section.topo .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(207, 92, 43, 0.55);
 }
 section.topo .conteudo {
   z-index: 1;
@@ -219,12 +233,15 @@ section.topo .conteudo h3 {
   padding: 15px 20px;
   border-radius: 10px;
   margin-bottom: 10px;
-  background: linear-gradient( 90deg, rgba(207, 92, 43, 0.55) 0%, rgba(89, 23, 62, 0.55) 100% );
+  background: linear-gradient(
+    90deg,
+    rgba(207, 92, 43, 0.55) 0%,
+    rgba(89, 23, 62, 0.55) 100%
+  );
 }
 section.topo .conteudo p {
   color: #fff;
   font-size: 18px;
- 
 }
 section.topo .conteudo .btn-play {
   margin-bottom: 10px;
@@ -748,6 +765,12 @@ section.rodape form button:hover {
     top: 100px;
     z-index: 5;
   }
+  section.topo .dropdown-menu {
+    background: unset;
+  }
+  section.topo .dropdown-menu .dropdown-item {
+    text-align: center;
+  }
   section.topo .conteudo {
     width: 55%;
   }
@@ -986,7 +1009,7 @@ section.rodape form button:hover {
   section.topo .conteudo .btn-play {
     padding: 0px 24px;
     margin-bottom: 5px;
-       font-size: 15px !important;
+    font-size: 15px !important;
   }
   section.topo .conteudo .stores img {
     margin: 3px;
@@ -1111,7 +1134,7 @@ section.rodape form button:hover {
   }
   section.topo .social img {
     height: 25px;
-}
+  }
   h2 {
     font-size: 22px;
   }
