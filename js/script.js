@@ -3,6 +3,8 @@ document.documentElement.onload = function () {
 }
 window.onload = function () {
   document.getElementById('loader').style.display = 'none'
+  const modalPopUp = new bootstrap.Modal(document.querySelector('#modal-popup'))
+  modalPopUp.show()
 }
 
 const btnMenuMobile = document.querySelector('.navbar-toggler')

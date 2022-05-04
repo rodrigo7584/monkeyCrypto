@@ -1,3 +1,6 @@
+<?php 
+ session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -48,6 +51,22 @@
         <div></div>
       </div>
     </div>
+     <!-- Modal popup-->
+     <div
+      class="modal fade"
+      id="modal-popup"
+      tabindex="-1"
+      aria-labelledby="modal-popup"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <video muted autoplay loop controls>
+          <source src="./videos/modal-video.mp4" type="video/mp4" />
+        </video>
+        </div>
+      </div>
+    </div>
+    <!-- fim modal cheklist -->
     <section class="topo">
       <span class="video-topo"></span>
       <header>
@@ -288,8 +307,7 @@
       id="checklistModal"
       tabindex="-1"
       aria-labelledby="checklistModal"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <img
@@ -320,6 +338,7 @@
         </div>
       </div>
     </div>
+    <!-- fim modal cheklist -->
     <section id="team" class="team">
       <span class="video-team"></span>
       <div class="container height-full">
@@ -564,5 +583,20 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./js/script.js"></script>
+    <script>  
+        let mostrar = "<?php 
+              if (!isset($_SESSION['mostrar'])){
+                $_SESSION['mostrar'] = "hide";
+              }else{
+                $_SESSION['mostrar'] = "show";
+              } 
+              echo $_SESSION['mostrar'];
+            ?>";
+        if(mostrar == 'show'){
+          alert('Mensagem Enviada')
+        }             
+        mostrar = "hide";
+    </script>
+    <?php unset($_SESSION['mostrar']); ?>
   </body>
 </html>

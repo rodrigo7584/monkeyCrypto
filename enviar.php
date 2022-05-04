@@ -3,7 +3,6 @@
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
-$assunto = $_POST['assunto'];
 $mensagem = $_POST['mensagem'];
 $data_envio = date('d/m/Y');
 $hora_envio = date('H:i:s');
@@ -31,9 +30,9 @@ $hora_envio = date('H:i:s');
   //enviar
 
   // emails para quem será enviado o formulário
-  $emailenviar = "caaxservicos@gmail.com";
+  $emailenviar = "rodrigo.gandhi@cojiba.com.br";
   $destino = $emailenviar;
-  $assunto = $assunto;
+  $assunto = "Contato site";
 
   // É necessário indicar que o formato do e-mail é html
   $headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -45,5 +44,5 @@ $hora_envio = date('H:i:s');
   session_start();
   $_SESSION['mostrar']='show';
 
-  header('location: contato.php');
+  header('location: index.php');
 ?>
