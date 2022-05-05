@@ -4,6 +4,9 @@ img#mike {
 #modal-popup {
   background-color: rgba(0, 0, 0, 0.7);
 }
+#modal-popup .modal-content {
+  background: transparent;
+}
 #modal-popup .modal-content video {
   z-index: 4;
 }

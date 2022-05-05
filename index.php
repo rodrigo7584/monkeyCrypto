@@ -1,5 +1,5 @@
-<?php 
- session_start();
+<?php
+include "config.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -68,6 +68,7 @@
         <video muted autoplay loop controls>
           <source src="./videos/modal-video.mp4" type="video/mp4" />
         </video>
+        <?php echo $lang['teste']?>
         </div>
       </div>
     </div>
