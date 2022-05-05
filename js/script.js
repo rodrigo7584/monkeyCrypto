@@ -1,9 +1,9 @@
+const modalPopUp = new bootstrap.Modal(document.querySelector('#modal-popup'))
 document.documentElement.onload = function () {
   document.getElementById('loader').style.display = 'block'
 }
 window.onload = function () {
   document.getElementById('loader').style.display = 'none'
-  const modalPopUp = new bootstrap.Modal(document.querySelector('#modal-popup'))
   modalPopUp.show()
 }
 

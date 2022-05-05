@@ -60,6 +60,11 @@
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
+        <img
+            class="btn-fechar"
+            src="./img/close.svg"
+            onclick="modalPopUp.hide()"
+          />
         <video muted autoplay loop controls>
           <source src="./videos/modal-video.mp4" type="video/mp4" />
         </video>
