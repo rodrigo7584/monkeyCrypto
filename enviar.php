@@ -30,7 +30,7 @@ $hora_envio = date('H:i:s');
   //enviar
 
   // emails para quem será enviado o formulário
-  $emailenviar = "rodrigo.gandhi@cojiba.com.br";
+  $emailenviar = "contact@apeislandgame.io";
   $destino = $emailenviar;
   $assunto = "Contato site";
 
