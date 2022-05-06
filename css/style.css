@@ -219,6 +219,15 @@ section.topo .nav-link:hover {
 section.topo .nav-link .logo {
   height: 150px;
 }
+section.topo .icone-idioma {
+  height: 25px;
+}
+section.topo .menu-idioma .dropdown-toggle {
+  text-align: center;
+}
+section.topo .menu-idioma .dropdown-toggle::after {
+  display: none;
+}
 section.topo .dropdown-menu {
   border: none;
   background: linear-gradient(

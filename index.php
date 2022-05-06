@@ -68,7 +68,6 @@ include "config.php";
         <video muted autoplay loop controls>
           <source src="./videos/modal-video.mp4" type="video/mp4" />
         </video>
-        <?php echo $lang['teste']?>
         </div>
       </div>
     </div>
@@ -102,10 +101,10 @@ include "config.php";
             >
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="#characters">characters</a>
+                  <a class="nav-link" href="#characters"><?php echo $lang['menu_item_1']?></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#gameplay">gameplay</a>
+                  <a class="nav-link" href="#gameplay"><?php echo $lang['menu_item_2']?></a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -116,7 +115,7 @@ include "config.php";
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Whitepaper
+                  <?php echo $lang['menu_item_3']?>
                   </a>
                   <ul
                     class="dropdown-menu"
@@ -126,14 +125,14 @@ include "config.php";
                       <a
                         class="dropdown-item"
                         href="https://ape-island.gitbook.io/ape-island-game-pt/"
-                        >PT</a
+                        ><?php echo $lang['menu_item_3_sub_1']?></a
                       >
                     </li>
                     <li>
                       <a
                         class="dropdown-item"
                         href="https://ape-island.gitbook.io/ape-island-game-in/"
-                        >EN</a
+                        ><?php echo $lang['menu_item_3_sub_2']?></a
                       >
                     </li>
                   </ul>
@@ -144,13 +143,44 @@ include "config.php";
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#team">team</a>
+                  <a class="nav-link" href="#team"><?php echo $lang['menu_item_4']?></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#checklist">checklist</a>
+                  <a class="nav-link" href="#checklist"><?php echo $lang['menu_item_5']?></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#tokenomics">tokenomics</a>
+                  <a class="nav-link" href="#tokenomics"><?php echo $lang['menu_item_6']?></a>
+                </li>
+                <li class="nav-item dropdown menu-idioma">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                  <img class="icone-idioma" src="./img/icone-globo.svg" alt="">
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="index.php?lang=pt"
+                        >PT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="index.php?lang=en"
+                        >EN</a
+                      >
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <div class="stores sumir-991 desativado">
@@ -174,19 +204,18 @@ include "config.php";
               <span class="btn-play">play</span>
             </a> -->
             <h1>
-              THE AGE OF THE APES <br />
-              IS BEGINNING AND IT <br />
-              COMES FULL OF REWARDS.
+              <?php echo $lang['topo_texto_1']?>
             </h1>
             <!-- <h2>
               Os macacos chegaram e o que eles mais querem é aventura e muitas
               bananas.
             </h2> -->
             <p>
-              Choose your character, explore the archipelago to collect bananas
-              in daily tasks and get more and more profit.
+              <?php echo $lang['topo_texto_2']?>
             </p>
-            <h3>TOKEN PRE-SALE: 05.16.22</h3>
+            <h3>
+              <?php echo $lang['topo_texto_3']?>
+            </h3>
             <div class="social">
               <a href="https://discord.gg/d7vtqmYg3s" target="_blank"
                 ><img src="./img/icone-discord.svg" alt=""
@@ -216,7 +245,7 @@ include "config.php";
       <div class="container height-full">
         <div class="row height-full">
           <div class="conteudo">
-            <h2>characters</h2>
+            <h2><?php echo $lang['characters_titulo']?></h2>
             <div class="caroussel caroussel-characters">
               <div class="btn-voltar controle">
                 <img src="./img/botao-voltar.png" alt="" />
@@ -322,24 +351,24 @@ include "config.php";
             onclick="checklistModal.hide()"
           />
           <ul>
-            <li class="checked">Business model development </li>
-            <li class="checked">Financial ecosystem development </li>
-            <li class="checked">Game script </li>
-            <li>Start of disclosures</li>
-            <li>Community support team recruitment</li>
-            <li>Demo version </li>
-            <li>Token pre-sale </li>
-            <li>Tokens distribution</li>
-            <li>Coinmarketcap/Coingecko Listings</li>
-            <li>Mystery Box Sale </li>
-            <li>Public sale of tokens</li>
-            <li>Game launch - PC version (campaign mode)</li>
-            <li>Mobile version (android) </li>
-            <li>New characters </li>
-            <li>Release of new game modes (PvP, Time Trial, Co-op) </li>
-            <li>Leaderboard/Ranking Release </li>
-            <li>Shopping</li>
-            <li>Mobile version (iOS)</li>
+            <li class="checked"><?php echo $lang['checklist_1']?></li>
+            <li class="checked"><?php echo $lang['checklist_2']?></li>
+            <li class="checked"><?php echo $lang['checklist_3']?></li>
+            <li><?php echo $lang['checklist_4']?></li>
+            <li><?php echo $lang['checklist_5']?></li>
+            <li><?php echo $lang['checklist_6']?></li>
+            <li><?php echo $lang['checklist_7']?></li>
+            <li><?php echo $lang['checklist_8']?></li>
+            <li><?php echo $lang['checklist_9']?></li>
+            <li><?php echo $lang['checklist_10']?></li>
+            <li><?php echo $lang['checklist_11']?></li>
+            <li><?php echo $lang['checklist_12']?></li>
+            <li><?php echo $lang['checklist_13']?></li>
+            <li><?php echo $lang['checklist_14']?></li>
+            <li><?php echo $lang['checklist_15']?></li>
+            <li><?php echo $lang['checklist_16']?></li>
+            <li><?php echo $lang['checklist_17']?></li>
+            <li><?php echo $lang['checklist_18']?></li>
           </ul>
         </div>
       </div>
@@ -350,7 +379,7 @@ include "config.php";
       <div class="container height-full">
         <div class="row height-full">
           <div class="conteudo">
-            <h2>Team</h2>
+            <h2><?php echo $lang['team_titulo']?></h2>
             <div class="caroussel caroussel-team">
               <div class="btn-voltar controle">
                 <img src="./img/botao-voltar.png" alt="" />
@@ -543,24 +572,24 @@ include "config.php";
             </div>
             <div class="coluna">
               <ul class="submenu">
-                <li><a href="#characters">CHARACTERS</a></li>
-                <li><a href="#gameplay">GAMEPLAY</a></li>
-                <li><a href="#checklist">CHECKLIST</a></li>
+                <li><a href="#characters"><?php echo $lang['menu_item_1']?></a></li>
+                <li><a href="#gameplay"><?php echo $lang['menu_item_2']?></a></li>
+                <li><a href="#checklist"><?php echo $lang['menu_item_5']?></a></li>
               </ul>
             </div>
             <div class="coluna">
               <ul class="submenu">
-                <li><a href="#team">TEAM</a></li>
-                <li><a href="#tokenomics">TOKENOMICS</a></li>
+                <li><a href="#team"><?php echo $lang['menu_item_4']?></a></li>
+                <li><a href="#tokenomics"><?php echo $lang['menu_item_6']?></a></li>
               </ul>
             </div>
             <div class="coluna">
-              <h5>Contact us</h5>
+              <h5><?php echo $lang['contato']?></h5>
               <form action="enviar.php" method="post">
-                <input type="text" placeholder="name" name="nome" />
+                <input type="text" placeholder="<?php echo $lang['placeholder_1']?>" name="nome" />
                 <input type="text" placeholder="email" name="email" />
                 <textarea placeholder="message..." name="mensagem"></textarea>
-                <button>send</button>
+                <button><?php echo $lang['enviar']?></button>
               </form>
             </div>
           </div>
@@ -575,7 +604,7 @@ include "config.php";
             <div class="modal-content">
                 <!-- Modal Header -->
                 <button type="button" class="close" data-dismiss="modal">×</button>
-                <h3>Mensagem enviada</h3>
+                <h3><?php echo $lang['retorno_email']?></h3>
             </div>
           </div>
         </div>
