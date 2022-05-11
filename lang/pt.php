@@ -11,7 +11,7 @@ $lang = array(
   "topo_texto_1" => "A ERA DOS MACACOS <br/> ESTÁ COMENÇANDO E VEM <br/> CHEIA DE RECOMPENSAS.",
   "topo_texto_2" => "Escolha seu personagem, explore o arquipelago e colete bananas em missões
   diárias e lucre mais e mais.",
-  "topo_texto_3" => "PRE-VENDA TOKEN: 05.16.22",
+  "topo_texto_3" => "PRE-VENDA TOKEN: 16.05.22",
   "characters_titulo" => "Personagens",
   "checklist_1" => "Desenvolvimento de modelo de negócios",
   "checklist_2" => "Desenvolvimento do ecossistema financeiro",
