@@ -456,7 +456,7 @@ include "config.php";
             <h2>tokenomics</h2>
             <div class="itens advisor">
               <div class="titulo">
-                <p>advisor <?php echo $lang['tokenomics_1']?></p>
+                <p><?php echo $lang['tokenomics_1']?></p>
               </div>
               <div class="porcentagem">
                 <p>2%</p>
@@ -467,7 +467,7 @@ include "config.php";
             </div>
             <div class="itens burn">
               <div class="titulo">
-                <p>burn <?php echo $lang['tokenomics_2']?></p>
+                <p><?php echo $lang['tokenomics_2']?></p>
               </div>
               <div class="porcentagem">
                 <p>2%</p>
@@ -478,7 +478,7 @@ include "config.php";
             </div>
             <div class="itens airdrop">
               <div class="titulo">
-                <p>airdrop <?php echo $lang['tokenomics_3']?></p>
+                <p><?php echo $lang['tokenomics_3']?></p>
               </div>
               <div class="porcentagem">
                 <p>2%</p>
@@ -489,10 +489,7 @@ include "config.php";
             </div>
             <div class="itens game-incentives">
               <div class="titulo">
-                <p><?php echo $lang['tokenomics_4']?>
-                  game <br />
-                  incentives
-                </p>
+                <p><?php echo $lang['tokenomics_4']?></p>
               </div>
               <div class="porcentagem">
                 <p>71%</p>
@@ -503,7 +500,7 @@ include "config.php";
             </div>
             <div class="itens devs">
               <div class="titulo">
-                <p>devs<?php echo $lang['tokenomics_5']?></p>
+                <p><?php echo $lang['tokenomics_5']?></p>
               </div>
               <div class="porcentagem">
                 <p>8%</p>
@@ -514,7 +511,7 @@ include "config.php";
             </div>
             <div class="itens liquidity">
               <div class="titulo">
-                <p>liquidity <?php echo $lang['tokenomics_6']?></p>
+                <p><?php echo $lang['tokenomics_6']?></p>
               </div>
               <div class="porcentagem">
                 <p>3%</p>
@@ -525,7 +522,7 @@ include "config.php";
             </div>
             <div class="itens market">
               <div class="titulo">
-                <p>market <?php echo $lang['tokenomics_7']?></p>
+                <p><?php echo $lang['tokenomics_7']?></p>
               </div>
               <div class="porcentagem">
                 <p>4%</p>
@@ -536,7 +533,7 @@ include "config.php";
             </div>
             <div class="itens presale">
               <div class="titulo">
-                <p>Pre sale <?php echo $lang['tokenomics_8']?></p>
+                <p><?php echo $lang['tokenomics_8']?></p>
               </div>
               <div class="porcentagem">
                 <p>8%</p>
