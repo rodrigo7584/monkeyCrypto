@@ -73,12 +73,6 @@ new Glider(carousselTeam, {
         slidesToShow: 3
       }
     }
-    // {
-    //   breakpoint: 992,
-    //   settings: {
-    //     slidesToShow: 4
-    //   }
-    // }
   ]
 })
 

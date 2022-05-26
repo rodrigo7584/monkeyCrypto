@@ -643,6 +643,66 @@ section.tokenomics .conteudo .itens.presale .titulo p::before {
   background: linear-gradient(to left, #eecd38, #e78300);
 }
 /*FIM TOKENOMICS*/
+/*PRESS*/
+section.press {
+  background-color: #ba1c8b;
+}
+section.press .box-caroussel {
+  margin-top: 50px;
+  padding: 50px 0px;
+  border-radius: 25px;
+  background: linear-gradient(
+    90deg,
+    rgba(207, 92, 43, 0.55) 0%,
+    rgba(89, 23, 62, 0.55) 100%
+  );
+  /* display: grid;
+  justify-items: center; */
+  position: relative;
+}
+section.press .box-caroussel .placa{
+  padding: 10px 0px;
+  left: calc(50% - 125px);
+  width: 250px;
+  top: -30px;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  background: url('../img/bg-madeira.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+section.press .caroussel {
+  display: grid;
+  grid-template-columns: 60px auto 60px;
+}
+section.press .caroussel .glider {
+  width: 100%;
+}
+section.press .caroussel .box {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding: 15px 0px;
+}
+section.press .caroussel .foto  {
+  height: 150px;
+  width: 150px;
+  outline: 2px solid yellow;
+  outline-offset: 5px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+section.press .caroussel h6 {
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-family: kg;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*FIM PRESS*/
 /*RODAPE*/
 section.rodape {
   height: calc(100vw / 4.669);
