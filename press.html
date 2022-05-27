@@ -102,6 +102,7 @@ include "config.php";
                 <div class="btn-avancar controle">
                   <img src="./img/botao-avancar.png" alt="" />
                 </div>
+                <div role="tablist" class="dots"></div>
               </div>
             </div>
           </div>
@@ -114,40 +115,7 @@ include "config.php";
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script>
-      document.documentElement.onload = function () {
-        document.getElementById('loader').style.display = 'block'
-      }
-      window.onload = function () {
-        document.getElementById('loader').style.display = 'none'
-      }
-      const carousselYoutube = document.querySelector(
-        'section.press .youtubers'
-      )
-      new Glider(carousselYoutube, {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        draggable: true,
-        scrollLock: true,
-        arrows: {
-          prev: '.caroussel-youtube .btn-voltar',
-          next: '.caroussel-youtube .btn-avancar'
-        },
-        responsive: [
-          {
-            breakpoint: 576,
-            settings: {
-              slidesToShow: 1
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 4
-            }
-          }
-        ]
-      })
+    <script src="./js/press.js"></script>
     </script>
   </body>
 </html>
