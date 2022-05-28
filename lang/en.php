@@ -43,5 +43,13 @@ $lang = array(
   "contato" => "Contact us",
   "placeholder_1"=> "name",
   "enviar" => "send",
-  "retorno_email" => "Your message was sent"
+  "retorno_email" => "Your message was sent",
+  "press_titulo" => "PRESS",
+  "caroucel_youtube_titulo" => "YOUTUBE",
+  "caroucel_youtube_nome_1" => "NAME INFLUENCER",
+  "caroucel_youtube_arroba_1" => "@influencer",
+  "caroucel_news_titulo" => "NEWS",
+  "caroucel_news_chamada_1" => "Lorem ipsum",
+  "caroucel_news_texto_1" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut",
+  "communities_titulo" => "COMMUNITIES"
 );

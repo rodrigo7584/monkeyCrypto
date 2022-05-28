@@ -170,11 +170,11 @@ img#mike {
   width: 45px;
   margin: 15px;
 }
-.caroussel .glider-dots .glider-dot{
+.caroussel .glider-dots .glider-dot {
   background: linear-gradient(to right, #ffce3b, #cc6923);
   opacity: 0.5;
 }
-.caroussel .glider-dots .glider-dot.active{
+.caroussel .glider-dots .glider-dot.active {
   opacity: 1;
 }
 h1 {
@@ -652,11 +652,14 @@ section.tokenomics .conteudo .itens.presale .titulo p::before {
 /*FIM TOKENOMICS*/
 /*PRESS*/
 section.press {
-  background-color: #ba1c8b;
+  background: url('../img/bg-press.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-section.press .box-caroussel {
+section.press .box-caroussel,
+section.news .box-caroussel {
   margin-top: 50px;
-  padding: 50px 0px;
+  padding: 50px 0px 25px 0px;
   border-radius: 25px;
   background: linear-gradient(
     90deg,
@@ -667,7 +670,14 @@ section.press .box-caroussel {
   justify-items: center; */
   position: relative;
 }
-section.press .box-caroussel .placa{
+section.news .box-caroussel .detalhe-coruja {
+  position: absolute;
+  width: 200px;
+  bottom: -100px;
+  left: -50px;
+}
+section.press .box-caroussel .placa,
+section.news .box-caroussel .placa {
   font-family: kg;
   padding: 10px 0px;
   left: calc(50% - 125px);
@@ -680,14 +690,17 @@ section.press .box-caroussel .placa{
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-section.press .box-caroussel .placa h3{
+section.press .box-caroussel .placa h3,
+section.news .box-caroussel .placa h3 {
   margin-bottom: 0px;
 }
-section.press .caroussel {
+section.press .caroussel,
+section.news .caroussel {
   display: grid;
   grid-template-columns: 60px auto 60px;
 }
-section.press .caroussel .glider {
+section.press .caroussel .glider,
+section.news .caroussel .glider {
   width: 100%;
 }
 section.press .caroussel .box {
@@ -696,26 +709,67 @@ section.press .caroussel .box {
   text-align: center;
   padding: 15px 0px;
 }
-section.press .caroussel .foto  {
+section.press .caroussel .foto {
   height: 150px;
   width: 150px;
-  outline: 2px solid yellow;
+  outline: 2px solid rgb(255, 166, 0);
   outline-offset: 5px;
   border-radius: 100%;
   margin-bottom: 20px;
 }
-section.press .caroussel h6 {
+section.press .caroussel h6,
+section.news .caroussel h6 {
   margin-bottom: 0px;
   font-size: 20px;
   font-family: kg;
   text-transform: uppercase;
   color: #fff;
 }
-
-section.press .caroussel .glider-dots {
+section.press .caroussel .glider-dots,
+section.news .caroussel .glider-dots {
   grid-column: 2/3;
 }
-
+section.news .caroussel .box {
+  border-radius: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(207, 92, 43, 0.55) 0%,
+    rgba(89, 23, 62, 0.55) 100%
+  );
+  display: grid;
+  justify-items: center;
+  margin: 20px;
+}
+section.news .caroussel .box .texto-news {
+  padding: 15px;
+}
+section.news .caroussel .box .texto-news p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.3;
+}
+section.communities .box-communities {
+  margin: 20px 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  justify-content: center;
+}
+section.communities .placa {
+  background: url('../img/bg-madeira.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 15px;
+}
+section.communities .placa h3 {
+  font-family: kg;
+  margin-bottom: 0px;
+  color: #fff;
+}
+section.communities .box-communities a img {
+  width: 150px;
+}
 /*FIM PRESS*/
 /*RODAPE*/
 section.rodape {

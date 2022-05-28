@@ -36,3 +36,29 @@ new Glider(carousselYoutube, {
     }
   ]
 })
+const carousselNews = document.querySelector('section.news .news')
+new Glider(carousselNews, {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  draggable: true,
+  scrollLock: true,
+  arrows: {
+    prev: '.caroussel-news .btn-voltar',
+    next: '.caroussel-news .btn-avancar'
+  },
+  dots: '.caroussel-news .dots',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3
+      }
+    }
+  ]
+})
