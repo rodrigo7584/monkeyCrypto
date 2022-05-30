@@ -4,11 +4,15 @@ document.documentElement.onload = function () {
 window.onload = function () {
   document.getElementById('loader').style.display = 'none'
 }
+const btnMenuMobile = document.querySelector('.navbar-toggler')
+const iconeMobile = document.querySelector('.icone-menu-mobile')
+btnMenuMobile.addEventListener('click', function () {
+  iconeMobile.classList.toggle('ativo')
+})
 const carousselYoutube = document.querySelector('section.press .youtubers')
 new Glider(carousselYoutube, {
   slidesToShow: 1,
   slidesToScroll: 1,
-  draggable: true,
   scrollLock: true,
   arrows: {
     prev: '.caroussel-youtube .btn-voltar',
@@ -62,3 +66,6 @@ new Glider(carousselNews, {
     }
   ]
 })
+const youtuberModal = new bootstrap.Modal(
+  document.querySelector('#youtuberModal')
+)

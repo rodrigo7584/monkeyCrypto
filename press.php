@@ -38,7 +38,7 @@ include "config.php";
     ></script>
     <title>Ape Island Game</title>
   </head>
-  <body>
+  <body class="body-press">
     <div id="loader">
       <div class="circulo">
         <img src="./img/banana.svg" alt="" />
@@ -51,8 +51,89 @@ include "config.php";
       </div>
     </div>
     <section class="press">
-      <?php include "header.php"?>
-      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand logo" href="index.php">
+              <img src="./img/logo-caveira.png" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <div class="icone-menu-mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.php#characters"><?php echo $lang['menu_item_1']?></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.php#gameplay"><?php echo $lang['menu_item_2']?></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.php#team"><?php echo $lang['menu_item_4']?></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.php#tokenomics"><?php echo $lang['menu_item_6']?></a>
+                </li>
+                <li class="nav-item dropdown menu-idioma">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                  <img class="icone-idioma" src="./img/icone-globo.svg" alt="">
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="index.php?lang=pt"
+                        >PT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="index.php?lang=en"
+                        >EN</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <div class="stores  desativado">
+                    <a class="nav-link" href="#"
+                      ><img class="desativado" src="./img/appStore.svg" alt=""
+                    /></a>
+                    <a class="nav-link" href="#"
+                      ><img class="desativado" src="./img/playStore.svg" alt=""
+                    /></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <div class="container container-press">
         <div class="row">
           <div class="col-12">
             <h2><?php echo $lang['press_titulo']?></h2>
@@ -63,7 +144,7 @@ include "config.php";
                   <img src="./img/botao-voltar.png" alt="" />
                 </div>
                 <div class="youtubers">
-                  <div class="box">
+                  <div class="box" onclick="youtuberModal.show()">
                     <img
                       class="foto"
                       src="./img/monkey-gamer-face.png"
@@ -72,7 +153,7 @@ include "config.php";
                     <h6><?php echo $lang['caroucel_youtube_nome_1']?></h6>
                     <p><?php echo $lang['caroucel_youtube_arroba_1']?></p>
                   </div>
-                  <div class="box">
+                  <div class="box" onclick="youtuberModal.show()">
                     <img
                       class="foto"
                       src="./img/monkey-gamer-face.png"
@@ -81,7 +162,7 @@ include "config.php";
                     <h6><?php echo $lang['caroucel_youtube_nome_1']?></h6>
                     <p><?php echo $lang['caroucel_youtube_arroba_1']?></p>
                   </div>
-                  <div class="box">
+                  <div class="box" onclick="youtuberModal.show()">
                     <img
                       class="foto"
                       src="./img/monkey-gamer-face.png"
@@ -90,7 +171,7 @@ include "config.php";
                     <h6><?php echo $lang['caroucel_youtube_nome_1']?></h6>
                     <p><?php echo $lang['caroucel_youtube_arroba_1']?></p>
                   </div>
-                  <div class="box">
+                  <div class="box" onclick="youtuberModal.show()">
                     <img
                       class="foto"
                       src="./img/monkey-gamer-face.png"
@@ -110,6 +191,41 @@ include "config.php";
         </div>
       </div>
     </section>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="youtuberModal"
+      tabindex="-1"
+      aria-labelledby="youtuberModal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img
+            class="btn-fechar"
+            src="./img/close-branco.svg"
+            onclick="youtuberModal.hide()"
+          />
+          <div class="cabecalho">
+            <img
+              class="foto"
+              src="./img/monkey-gamer-face.png"
+              alt=""
+            />
+            <div class="dados-influencer">
+              <h6><?php echo $lang['caroucel_youtube_nome_1']?></h6>
+              <p><?php echo $lang['caroucel_youtube_arroba_1']?></p>
+            </div>
+          </div>
+          <div class="conteudo">
+            <video muted autoplay loop controls>
+                <source src="./videos/modal-video.mp4" type="video/mp4" />
+            </video>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- fim modal cheklist -->
     <section class="news">
       <div class="container">
         <div class="row">
@@ -203,7 +319,54 @@ include "config.php";
         </div>
       </div>
     </section>
-    <?php include "footer.php" ?>
+    <section class="rodape rodape-press">
+      <div class="container">
+        <div class="row">
+          <div class="conteudo">
+            <div class="coluna">
+              <img class="logo" src="./img/logo-caveira.png" alt="" />
+              <div class="social">
+                <a href="https://www.instagram.com/apeislandgame/" target="_blank"
+                  ><img src="./img/icone-instagram.svg" alt=""
+                /></a>
+                <a href="https://discord.gg/d7vtqmYg3s" target="_blank"
+                  ><img src="./img/icone-discord.svg" alt=""
+                /></a>
+                <a href="https://t.me/apeislandgameann" target="_blank"
+                  ><img src="./img/icone-telegram.svg" alt=""
+                /></a>
+                <a href="https://twitter.com/apeislandgame" target="_blank"
+                  ><img src="./img/icone-twitter.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="coluna">
+              <ul class="submenu">
+                <li><a href="#characters"><?php echo $lang['menu_item_1']?></a></li>
+                <li><a href="#gameplay"><?php echo $lang['menu_item_2']?></a></li>
+                <li><a href="#checklist"><?php echo $lang['menu_item_5']?></a></li>
+              </ul>
+            </div>
+            <div class="coluna">
+              <ul class="submenu">
+                <li><a href="#team"><?php echo $lang['menu_item_4']?></a></li>
+                <li><a href="#tokenomics"><?php echo $lang['menu_item_6']?></a></li>
+                <li><a href="press.php"><?php echo $lang['menu_item_7']?></a></li>
+              </ul>
+            </div>
+            <div class="coluna">
+              <h5><?php echo $lang['contato']?></h5>
+              <form action="enviar.php" method="post">
+                <input type="text" placeholder="<?php echo $lang['placeholder_1']?>" name="nome" />
+                <input type="text" placeholder="email" name="email" />
+                <textarea placeholder="message..." name="mensagem"></textarea>
+                <button><?php echo $lang['enviar']?></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.js"
       integrity="sha512-gAcB+wjrzbVlvnKqeqTSDTU6e7bPOiFCAe/bnJ8KXc99HFB7ApCoLMsk0+x3cBXh6+Vbt4gTf10DcJmKMUistA=="

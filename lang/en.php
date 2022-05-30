@@ -8,6 +8,7 @@ $lang = array(
   "menu_item_4" => "team",
   "menu_item_5" => "checklist",
   "menu_item_6" => "tokenomics",
+  "menu_item_7" => "press",
   "topo_texto_1" => "THE AGE OF THE APES <br /> IS BEGINNING AND IT <br /> COMES FULL OF REWARDS.",
   "topo_texto_2" => "Choose your character, explore the archipelago to collect bananas
   in daily tasks and get more and more profit.",

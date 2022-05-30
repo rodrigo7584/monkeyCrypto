@@ -8,6 +8,7 @@ $lang = array(
   "menu_item_4" => "time",
   "menu_item_5" => "checklist",
   "menu_item_6" => "tokenomics",
+  "menu_item_7" => "imprenssa",
   "topo_texto_1" => "A ERA DOS MACACOS <br/> ESTÁ COMENÇANDO E VEM <br/> CHEIA DE RECOMPENSAS.",
   "topo_texto_2" => "Escolha seu personagem, explore o arquipelago e colete bananas em missões
   diárias e lucre mais e mais.",

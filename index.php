@@ -43,7 +43,6 @@ include "config.php";
       <div class="circulo">
         <img src="./img/banana.svg" alt="" />
       </div>
-
       <div class="lds-ellipsis">
         <div></div>
         <div></div>
@@ -556,6 +555,9 @@ include "config.php";
             <div class="coluna">
               <img class="logo" src="./img/logo-caveira.png" alt="" />
               <div class="social">
+                <a href="https://www.instagram.com/apeislandgame/" target="_blank"
+                  ><img src="./img/icone-instagram.svg" alt=""
+                /></a>
                 <a href="https://discord.gg/d7vtqmYg3s" target="_blank"
                   ><img src="./img/icone-discord.svg" alt=""
                 /></a>
@@ -578,6 +580,7 @@ include "config.php";
               <ul class="submenu">
                 <li><a href="#team"><?php echo $lang['menu_item_4']?></a></li>
                 <li><a href="#tokenomics"><?php echo $lang['menu_item_6']?></a></li>
+                <li><a href="press.php"><?php echo $lang['menu_item_7']?></a></li>
               </ul>
             </div>
             <div class="coluna">
