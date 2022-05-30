@@ -852,6 +852,9 @@ section.rodape-press{
   background-size: auto 50px, auto 200px, auto 200px;
   background-position: 50% 101%, -2% calc(100% - -30px), 102% calc(100% - -30px);
 }
+section.rodape-press input::placeholder,section.rodape-press textarea::placeholder{
+  color: #fff;
+}
 /*FIM PRESS*/
 /*RODAPE*/
 section.rodape {

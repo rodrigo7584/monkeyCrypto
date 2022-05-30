@@ -216,6 +216,9 @@ include "config.php";
               <?php echo $lang['topo_texto_3']?>
             </h3>
             <div class="social">
+              <a href="https://www.instagram.com/apeislandgame/" target="_blank"
+                  ><img src="./img/icone-instagram.svg" alt=""
+                /></a>
               <a href="https://discord.gg/d7vtqmYg3s" target="_blank"
                 ><img src="./img/icone-discord.svg" alt=""
               /></a>
