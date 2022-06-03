@@ -209,7 +209,7 @@ section {
 section.topo {
   height: calc(100vw / 1.751);
 }
- .nav-link {
+.nav-link {
   color: #ffffff;
   text-transform: uppercase;
   font-family: kg;
@@ -605,11 +605,11 @@ section.tokenomics .itens.airdrop {
   left: 70%;
   top: 33%;
 }
-section.tokenomics .itens.game-incentives {
+section.tokenomics .itens.play-to-earn {
   top: 64%;
   left: 74%;
 }
-section.tokenomics .itens.devs {
+section.tokenomics .itens.staking {
   top: 79%;
   left: 56%;
 }
@@ -619,11 +619,15 @@ section.tokenomics .itens.liquidity {
 }
 section.tokenomics .itens.market {
   left: 22%;
-  top: 42%;
+  top: 37%;
 }
 section.tokenomics .itens.presale {
   left: 77%;
   top: 48%;
+}
+section.tokenomics .itens.investor {
+  left: 19%;
+  top: 51%;
 }
 section.tokenomics .conteudo .itens.burn .titulo p::before {
   background: linear-gradient(to left, #1596e2, #6fcad9);
@@ -631,10 +635,10 @@ section.tokenomics .conteudo .itens.burn .titulo p::before {
 section.tokenomics .conteudo .itens.airdrop .titulo p::before {
   background: linear-gradient(to left, #f9c503, #d6ab1d);
 }
-section.tokenomics .conteudo .itens.game-incentives .titulo p::before {
+section.tokenomics .conteudo .itens.play-to-earn .titulo p::before {
   background: linear-gradient(to left, #fa6297, #910cac);
 }
-section.tokenomics .conteudo .itens.devs .titulo p::before {
+section.tokenomics .conteudo .itens.staking .titulo p::before {
   background: linear-gradient(to left, #7216e1, #5e0ca9);
 }
 section.tokenomics .conteudo .itens.liquidity .titulo p::before {
@@ -649,9 +653,12 @@ section.tokenomics .conteudo .itens.advisor .titulo p::before {
 section.tokenomics .conteudo .itens.presale .titulo p::before {
   background: linear-gradient(to left, #eecd38, #e78300);
 }
+section.tokenomics .conteudo .itens.investor .titulo p::before {
+  background: linear-gradient(to left, #38eeee, #04b613);
+}
 /*FIM TOKENOMICS*/
 /*PRESS*/
-.body-press{
+.body-press {
   background-color: #ffad6f;
 }
 section.press {
@@ -659,7 +666,7 @@ section.press {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.container-press{
+.container-press {
   padding-top: 80px;
   padding-bottom: 120px;
 }
@@ -733,14 +740,14 @@ section.news .caroussel h6 {
   text-transform: uppercase;
   color: #fff;
 }
-section.press .caroussel p{
+section.press .caroussel p {
   margin-bottom: 0px;
 }
 section.press .caroussel .glider-dots,
 section.news .caroussel .glider-dots {
   grid-column: 2/3;
 }
-#youtuberModal .modal-content{
+#youtuberModal .modal-content {
   border-radius: 40px;
   border: none;
   background: linear-gradient(
@@ -766,7 +773,7 @@ section.news .caroussel .glider-dots {
   cursor: pointer;
   top: -10px;
 }
-#youtuberModal .modal-content .cabecalho .foto{
+#youtuberModal .modal-content .cabecalho .foto {
   height: 100px;
   width: 100px;
   outline: 2px solid rgb(255, 166, 0);
@@ -785,11 +792,11 @@ section.news .caroussel .glider-dots {
   font-size: 14px;
   margin-bottom: 0px;
 }
-#youtuberModal .modal-content .conteudo video{
+#youtuberModal .modal-content .conteudo video {
   max-width: 100%;
 }
 section.news {
-  background:url("../img/moeda-caveira.png");
+  background: url('../img/moeda-caveira.png');
   background-repeat: no-repeat;
   background-position: 95% 100%;
   background-size: 100px auto;
@@ -814,12 +821,12 @@ section.news .caroussel .box .texto-news p {
   font-size: 13px;
   line-height: 1.3;
 }
-section.communities{
-    background:url("../img/moeda-caveira-2.png");
-    background-repeat: no-repeat;
-    background-position: 5% 100%;
-    background-size: 80px auto;
-    padding-bottom: 80px;
+section.communities {
+  background: url('../img/moeda-caveira-2.png');
+  background-repeat: no-repeat;
+  background-position: 5% 100%;
+  background-size: 80px auto;
+  padding-bottom: 80px;
 }
 section.communities .box-communities {
   margin: 20px 0px;
@@ -844,15 +851,17 @@ section.communities .placa h3 {
 section.communities .box-communities a img {
   width: 150px;
 }
-section.rodape-press{
+section.rodape-press {
   padding: 30px 0px;
-  height: auto!important;
-  background: url(../img/banana.png), url(../img/folha-bananeira.png),url(../img/folha-bananeira-2.png);
+  height: auto !important;
+  background: url(../img/banana.png), url(../img/folha-bananeira.png),
+    url(../img/folha-bananeira-2.png);
   background-repeat: no-repeat;
   background-size: auto 50px, auto 200px, auto 200px;
   background-position: 50% 101%, -2% calc(100% - -30px), 102% calc(100% - -30px);
 }
-section.rodape-press input::placeholder,section.rodape-press textarea::placeholder{
+section.rodape-press input::placeholder,
+section.rodape-press textarea::placeholder {
   color: #fff;
 }
 /*FIM PRESS*/
@@ -977,7 +986,7 @@ section.rodape form button:hover {
   .sumir-991 {
     display: none;
   }
-   .navbar-toggler {
+  .navbar-toggler {
     border: 3px solid #ffffff !important;
   }
   .icone-menu-mobile div {
@@ -1095,7 +1104,7 @@ section.rodape form button:hover {
   section.tokenomics .conteudo .itens.burn {
     left: 56%;
   }
-  section.tokenomics .itens.devs {
+  section.tokenomics .itens.staking {
     left: 57%;
   }
   .container-press {
@@ -1106,7 +1115,7 @@ section.rodape form button:hover {
     height: auto !important;
     background: linear-gradient(to bottom, #122a83, #1b2a82);
   }
-  section.rodape.rodape-press{
+  section.rodape.rodape-press {
     background: #ffad6f;
   }
   section.rodape .bg_video {
@@ -1359,7 +1368,7 @@ section.rodape form button:hover {
     left: 71%;
     top: 34%;
   }
-  section.tokenomics .itens.game-incentives {
+  section.tokenomics .itens.play-to-earn {
     top: 71%;
     left: 74%;
   }
@@ -1432,6 +1441,15 @@ section.rodape form button:hover {
   section.tokenomics .conteudo .titulo p::before {
     width: 10px;
     height: 10px;
+  }
+  section.tokenomics .itens.investor {
+    top: 55%;
+  }
+  section.tokenomics .itens.liquidity {
+    top: 71%;
+  }
+  section.tokenomics .itens.market {
+    top: 38%;
   }
   section.communities .box-communities {
     gap: 20px;

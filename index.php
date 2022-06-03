@@ -489,26 +489,26 @@ include "config.php";
                 <p>1,600,000</p>
               </div>
             </div>
-            <div class="itens game-incentives">
+            <div class="itens play-to-earn">
               <div class="titulo">
                 <p><?php echo $lang['tokenomics_4']?></p>
               </div>
               <div class="porcentagem">
-                <p>71%</p>
+                <p>63,75%</p>
               </div>
               <div class="numero">
-                <p>56,800,000</p>
+                <p>51,000,000</p>
               </div>
             </div>
-            <div class="itens devs">
+            <div class="itens staking">
               <div class="titulo">
                 <p><?php echo $lang['tokenomics_5']?></p>
               </div>
               <div class="porcentagem">
-                <p>8%</p>
+                <p>18.75%</p>
               </div>
               <div class="numero">
-                <p>6,400,000</p>
+                <p>15,000,000</p>
               </div>
             </div>
             <div class="itens liquidity">
@@ -516,10 +516,10 @@ include "config.php";
                 <p><?php echo $lang['tokenomics_6']?></p>
               </div>
               <div class="porcentagem">
-                <p>3%</p>
+                <p>1,5%</p>
               </div>
               <div class="numero">
-                <p>2,400,000</p>
+                <p>1,200,000</p>
               </div>
             </div>
             <div class="itens market">
@@ -538,10 +538,21 @@ include "config.php";
                 <p><?php echo $lang['tokenomics_8']?></p>
               </div>
               <div class="porcentagem">
-                <p>8%</p>
+                <p>2,25%</p>
               </div>
               <div class="numero">
-                <p>6,400,000</p>
+                <p>1,800,000</p>
+              </div>
+            </div>
+            <div class="itens investor">
+              <div class="titulo">
+                <p><?php echo $lang['tokenomics_9']?></p>
+              </div>
+              <div class="porcentagem">
+                <p>3,75%</p>
+              </div>
+              <div class="numero">
+                <p>3,000,000</p>
               </div>
             </div>
           </div>
