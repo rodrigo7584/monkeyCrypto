@@ -57,16 +57,19 @@ include "config.php";
       tabindex="-1"
       aria-labelledby="modal-popup"
       aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
         <img
             class="btn-fechar"
             src="./img/close.svg"
             onclick="modalPopUp.hide()"
           />
-        <video muted autoplay loop controls>
+        <!-- <video muted autoplay loop controls>
           <source src="./videos/modal-video.mp4" type="video/mp4" />
-        </video>
+        </video> -->
+        <a target="_blank" href="https://play.apeislandgame.io/">
+          <img src="./img/banner-demo.jpg" alt="link para demo" class="img-fluid">
+        </a>
         </div>
       </div>
     </div>

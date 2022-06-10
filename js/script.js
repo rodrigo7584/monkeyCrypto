@@ -1,8 +1,10 @@
 document.documentElement.onload = function () {
   document.getElementById('loader').style.display = 'block'
 }
+const modalPopUp = new bootstrap.Modal(document.querySelector('#modal-popup'))
 window.onload = function () {
   document.getElementById('loader').style.display = 'none'
+  modalPopUp.show()
 }
 
 const btnMenuMobile = document.querySelector('.navbar-toggler')
