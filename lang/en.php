@@ -12,7 +12,8 @@ $lang = array(
   "topo_texto_1" => "THE AGE OF THE APES <br /> IS BEGINNING AND IT <br /> COMES FULL OF REWARDS.",
   "topo_texto_2" => "Choose your character, explore the archipelago to collect bananas
   in daily tasks and get more and more profit.",
-  "topo_texto_3" => "TOKEN PRE-SALE: 06.10.22",
+  "btn_play" => "Play Now",
+  "topo_texto_3" => "TOKEN PRE-SALE: 2022",
   "characters_titulo" => "characters",
   "checklist_1" => "Business model development",
   "checklist_2" => "Financial ecosystem development",

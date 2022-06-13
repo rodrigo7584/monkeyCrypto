@@ -236,6 +236,9 @@ include "config.php";
               <a href="#"><img src="./img/appStore.svg" alt="" /></a>
               <a href="#"><img src="./img/playStore.svg" alt="" /></a>
             </div>
+            <a href="https://play.apeislandgame.io/"  class="btn-play">
+            <?php echo $lang['btn_play']?>
+            </a>
           </div>
         </div>
       </div>

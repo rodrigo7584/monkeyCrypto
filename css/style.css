@@ -175,7 +175,7 @@ img#mike {
 }
 .caroussel .controle img {
   width: 45px;
-  margin: 15px;
+  margin: 8px;
 }
 .caroussel .glider-dots .glider-dot {
   background: linear-gradient(to right, #ffce3b, #cc6923);
@@ -254,7 +254,7 @@ section.topo {
   background-color: rgba(207, 92, 43, 0.55);
 }
 section.topo .conteudo {
-  z-index: 1;
+  z-index: 3;
   display: grid;
   margin: 0 auto;
   justify-items: center;
@@ -286,8 +286,7 @@ section.topo .conteudo p {
   font-size: 18px;
 }
 section.topo .conteudo .btn-play {
-  margin-bottom: 10px;
-  margin-left: -35px;
+  margin: 10px 0;
 }
 section.topo .conteudo h1 {
   text-align: center;
@@ -300,7 +299,7 @@ section.topo .conteudo h1 {
   display: inline-block;
   background: url(../img/bg-botao.png);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-position: center;
 }
 .btn-play:hover {
@@ -966,14 +965,11 @@ section.rodape form button:hover {
   .nav-link {
     font-size: 16px;
   }
-  .nav-link img {
-    width: 100px;
+  .nav-item .stores a img {
+    width: 85px;
   }
   section.topo .conteudo {
     width: 50%;
-  }
-  section.topo .conteudo .btn-play {
-    margin-bottom: 10px;
   }
   section.characters .conteudo .lista .box .char {
     height: 320px;
@@ -1032,12 +1028,9 @@ section.rodape form button:hover {
     width: 55%;
   }
   section.topo .conteudo .btn-play {
-    margin-bottom: 10px;
-  }
-  section.topo .conteudo .btn-play {
     padding: 10px 35px;
-    font-size: 20px !important;
-    margin-left: 0px;
+    font-size: 15px !important;
+    margin: 0px;
   }
   section.topo .conteudo h1 {
     font-size: 22px;
@@ -1060,8 +1053,8 @@ section.rodape form button:hover {
   }
   section.topo .conteudo .stores img {
     margin: 3px;
-    height: 60px;
-    width: 100px;
+    height: 30px;
+    width: auto;
   }
   div.cipo img {
     margin-top: -42px;
@@ -1200,10 +1193,12 @@ section.rodape form button:hover {
     font-size: 12px;
   }
   section.topo .conteudo .btn-play {
-    font-size: 15px !important;
+    font-size: 13px !important;
+    padding: 3px 15px;
+    margin: 0px;
   }
   section.topo .conteudo .stores img {
-    height: 25px;
+    height: 23px;
   }
   div.cipo img {
     margin-top: -30px;
@@ -1272,14 +1267,13 @@ section.rodape form button:hover {
     height: calc(150vw / 1.759);
   }
   section.topo .conteudo .btn-play {
-    padding: 0px 24px;
+    padding: 5px 24px;
     margin-bottom: 5px;
-    font-size: 15px !important;
+    font-size: 12px !important;
   }
   section.topo .conteudo .stores img {
-    margin: 3px;
-    height: 35px;
-    width: 85px;
+    margin: 1px;
+    height: 24px;
   }
   section.topo .conteudo {
     width: 53%;
