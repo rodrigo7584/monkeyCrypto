@@ -253,6 +253,12 @@ section.topo {
 .dropdown-menu .dropdown-item:hover {
   background-color: rgba(207, 92, 43, 0.55);
 }
+li.dropdown-item-title {
+  font-weight: 800;
+  padding: 0.25rem 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
 section.topo .conteudo {
   z-index: 3;
   display: grid;
@@ -1021,7 +1027,8 @@ section.rodape form button:hover {
   .dropdown-menu {
     background: unset;
   }
-  .dropdown-menu .dropdown-item {
+  .dropdown-menu .dropdown-item,
+  li.dropdown-item-title {
     text-align: center;
   }
   section.topo .conteudo {

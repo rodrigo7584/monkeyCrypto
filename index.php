@@ -123,18 +123,38 @@ include "config.php";
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
+                    <li class="dropdown-item-title">
+                      <?php echo $lang['menu_item_3_subitem_1_titulo']?>
+                    </li>
                     <li>
                       <a
                         class="dropdown-item"
                         href="https://ape-island.gitbook.io/ape-island-game-pt/"
-                        ><?php echo $lang['menu_item_3_sub_1']?></a
+                        ><?php echo $lang['menu_item_3_subitem_1_item_1']?></a
                       >
                     </li>
                     <li>
                       <a
                         class="dropdown-item"
                         href="https://ape-island.gitbook.io/ape-island-game-in/"
-                        ><?php echo $lang['menu_item_3_sub_2']?></a
+                        ><?php echo $lang['menu_item_3_subitem_1_item_2']?></a
+                      >
+                    </li>
+                    <li class="dropdown-item-title">
+                      <?php echo $lang['menu_item_3_subitem_2_titulo']?>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://play.apeislandgame.io/"
+                        ><?php echo $lang['menu_item_3_subitem_2_item_1']?></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://ape-island.gitbook.io/ape-island-game-in/"
+                        ><?php echo $lang['menu_item_3_subitem_2_item_2']?></a
                       >
                     </li>
                   </ul>

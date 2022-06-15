@@ -190,6 +190,31 @@ include "config.php";
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2><?php echo $lang['press_titulo']?></h2>
+            <div class="box-caroussel">
+              <div class="placa"><h3><?php echo $lang['caroucel_youtube_titulo']?></h3></div>
+              <div class="caroussel caroussel-youtube">
+                <div class="btn-voltar controle">
+                  <img src="./img/botao-voltar.png" alt="" />
+                </div>
+                <div class="youtubers">
+
+                </div>
+                <div class="btn-avancar controle">
+                  <img src="./img/botao-avancar.png" alt="" />
+                </div>
+                <div role="tablist" class="dots"></div>
+              </div>
+              <div class="modais-youtubers">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Modal -->
     <div

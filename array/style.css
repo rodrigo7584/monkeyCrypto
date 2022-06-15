@@ -1,0 +1,10 @@
+.glider .slide {
+  background-color: gray;
+  min-height: 300px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 7px;
+}
