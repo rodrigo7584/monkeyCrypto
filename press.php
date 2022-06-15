@@ -209,48 +209,13 @@ include "config.php";
                 <div role="tablist" class="dots"></div>
               </div>
               <div class="modais-youtubers">
-                
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="youtuberModal"
-      tabindex="-1"
-      aria-labelledby="youtuberModal"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <img
-            class="btn-fechar"
-            src="./img/close-branco.svg"
-            onclick="youtuberModal.hide()"
-          />
-          <div class="cabecalho">
-            <img
-              class="foto"
-              src="./img/monkey-gamer-face.png"
-              alt=""
-            />
-            <div class="dados-influencer">
-              <h6><?php echo $lang['caroucel_youtube_nome_1']?></h6>
-              <p><?php echo $lang['caroucel_youtube_arroba_1']?></p>
-            </div>
-          </div>
-          <div class="conteudo">
-            <video muted autoplay loop controls>
-                <source src="./videos/modal-video.mp4" type="video/mp4" />
-            </video>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    <!-- fim modal cheklist -->
     <section class="news">
       <div class="container">
         <div class="row">
