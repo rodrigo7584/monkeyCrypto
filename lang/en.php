@@ -60,3 +60,36 @@ $lang = array(
   "caroucel_news_texto_1" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut",
   "communities_titulo" => "COMMUNITIES"
 );
+
+$lista_equipe = array(
+    (object) array(
+      "thumb" => "materia-1.png",
+      "titulo" => "Criptonizando",
+      "chamada" => "Ape Island – explore uma ilha cheia de mistérios e macacos malucos",
+      "link" => "https://criptonizando.com/ape-island-explore-uma-ilha-cheia-de-misterios-e-macacos-malucos/"
+    ),
+    (object) array(
+      "thumb" => "materia-2.png",
+      "titulo" => "Webitcon",
+      "chamada" => "Conheça Ape Island, game NFT de plataforma cheio de recompensas",
+      "link" => "https://webitcoin.com.br/ape-island-game-nft-plataforma-25-abr/"
+    ),
+    (object) array(
+      "thumb" => "materia-3.png",
+      "titulo" => "Benzinga",
+      "chamada" => "Ape Island develops an intriguing and simplistic Play to Earn game",
+      "link" => "https://www.benzinga.com/pressreleases/22/05/ab27154675/ape-island-develops-an-intriguing-and-simplistic-play-to-earn-game"
+    ),
+    (object) array(
+      "thumb" => "materia-4.png",
+      "titulo" => "Market Watch",
+      "chamada" => "Ape Island develops an intriguing and simplistic Play to Earn game",
+      "link" => "https://www.marketwatch.com/press-release/ape-island-develops-an-intriguing-and-simplistic-play-to-earn-game-2022-05-11"
+    ),
+    (object) array(
+      "thumb" => "materia-5.png",
+      "titulo" => "Digital Journal",
+      "chamada" => "Ape Island develops an intriguing and simplistic Play to Earn game",
+      "link" => "https://www.digitaljournal.com/pr/ape-island-develops-an-intriguing-and-simplistic-play-to-earn-game"
+    ),
+    );

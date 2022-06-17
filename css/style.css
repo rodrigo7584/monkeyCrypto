@@ -759,7 +759,7 @@ section.press .caroussel .glider-dots,
 section.news .caroussel .glider-dots {
   grid-column: 2/3;
 }
-#youtuberModal .modal-content {
+.youtuberModal .modal-content {
   border-radius: 40px;
   border: none;
   background: linear-gradient(
@@ -769,13 +769,13 @@ section.news .caroussel .glider-dots {
   );
   padding: 25px;
 }
-#youtuberModal .modal-content .cabecalho {
+.youtuberModal .modal-content .cabecalho {
   position: relative;
   display: flex;
   gap: 25px;
   align-items: center;
 }
-#youtuberModal .modal-content img.btn-fechar {
+.youtuberModal .modal-content img.btn-fechar {
   position: absolute;
   height: 40px;
   background: linear-gradient(to left, #cc6923, #ffce3b);
@@ -785,7 +785,7 @@ section.news .caroussel .glider-dots {
   cursor: pointer;
   top: -10px;
 }
-#youtuberModal .modal-content .cabecalho .foto {
+.youtuberModal .modal-content .cabecalho .foto {
   height: 100px;
   width: 100px;
   outline: 2px solid rgb(255, 166, 0);
@@ -793,18 +793,18 @@ section.news .caroussel .glider-dots {
   border-radius: 100%;
   margin-bottom: 20px;
 }
-#youtuberModal .modal-content .cabecalho h6 {
+.youtuberModal .modal-content .cabecalho h6 {
   margin-bottom: 0px;
   font-size: 20px;
   font-family: kg;
   text-transform: uppercase;
   color: #fff;
 }
-#youtuberModal .modal-content .cabecalho p {
+.youtuberModal .modal-content .cabecalho p {
   font-size: 14px;
   margin-bottom: 0px;
 }
-#youtuberModal .modal-content .conteudo video {
+.youtuberModal .modal-content .conteudo iframe {
   max-width: 100%;
 }
 section.news {
@@ -824,6 +824,7 @@ section.news .caroussel .box {
   display: grid;
   justify-items: center;
   margin: 20px;
+  overflow: hidden;
 }
 section.news .caroussel .box .texto-news {
   padding: 15px;
@@ -862,6 +863,7 @@ section.communities .placa h3 {
 }
 section.communities .box-communities a img {
   width: 150px;
+  border-radius: 100%;
 }
 section.rodape-press {
   padding: 30px 0px;

@@ -3,48 +3,60 @@ document.documentElement.onload = function () {
 }
 window.onload = function () {
   document.getElementById('loader').style.display = 'none'
+  for (let i = 0; i < youtuber.length; i++) {
+    gerarSlides(youtuber[i].thumb, youtuber[i].nome, 'youtuber' + i)
+    gerarModaisYoutubers(
+      youtuber[i].thumb,
+      youtuber[i].nome,
+      youtuber[i].video,
+      'youtuber' + i
+    )
+  }
+  const carousselYoutube = document.querySelector('section.press .youtubers')
+  new Glider(carousselYoutube, {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    scrollLock: true,
+    arrows: {
+      prev: '.caroussel-youtube .btn-voltar',
+      next: '.caroussel-youtube .btn-avancar'
+    },
+    dots: '.caroussel-youtube .dots',
+    responsive: [
+      {
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4
+        }
+      }
+    ]
+  })
 }
 const btnMenuMobile = document.querySelector('.navbar-toggler')
 const iconeMobile = document.querySelector('.icone-menu-mobile')
 btnMenuMobile.addEventListener('click', function () {
   iconeMobile.classList.toggle('ativo')
 })
-const carousselYoutube = document.querySelector('section.press .youtubers')
-new Glider(carousselYoutube, {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  scrollLock: true,
-  arrows: {
-    prev: '.caroussel-youtube .btn-voltar',
-    next: '.caroussel-youtube .btn-avancar'
-  },
-  dots: '.caroussel-youtube .dots',
-  responsive: [
-    {
-      breakpoint: 620,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4
-      }
-    }
-  ]
-})
+
 const carousselNews = document.querySelector('section.news .news')
 new Glider(carousselNews, {
   slidesToShow: 1,
   slidesToScroll: 1,
-  draggable: true,
   scrollLock: true,
   arrows: {
     prev: '.caroussel-news .btn-voltar',
@@ -66,44 +78,54 @@ new Glider(carousselNews, {
     }
   ]
 })
-function gerarModaisYoutubers(nome) {
+function gerarSlides(thumb, nome, indice) {
+  boxYoutubers.innerHTML += `
+    <div class="box" data-bs-toggle="modal" data-bs-target="#${indice}">
+      <img
+        class="foto"
+        src="./img/press/${thumb}.jpg"
+        alt=""
+      />
+      <h6>${nome}</h6>
+      <p>@${nome}</p>
+    </div>
+  `
+}
+function gerarModaisYoutubers(thumb, nome, video, indice) {
   boxModais.innerHTML += `
   <!-- Modal -->
   <div
-    class="modal fade"
-    id="youtuberModal"
+    class="modal fade youtuberModal"
+    id="${indice}"
     tabindex="-1"
-    aria-labelledby="youtuberModal"
+    aria-labelledby="${indice}"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <img
           class="btn-fechar"
           src="./img/close-branco.svg"
-          onclick="youtuberModal.hide()"
+          data-bs-dismiss="modal"
         />
         <div class="cabecalho">
           <img
             class="foto"
-            src="./img/monkey-gamer-face.png"
+            src="./img/press/${thumb}.jpg"
             alt=""
           />
           <div class="dados-influencer">
-            <h6><?php echo $lang['caroucel_youtube_nome_1']?></h6>
-            <p><?php echo $lang['caroucel_youtube_arroba_1']?></p>
+            <h6>${nome}</h6>
+            <p>@${nome}</p>
           </div>
         </div>
         <div class="conteudo">
-          <video muted autoplay loop controls>
-              <source src="./videos/modal-video.mp4" type="video/mp4" />
-          </video>
+          ${video}
         </div>
-        
       </div>
     </div>
   </div>
   <!-- fim modal youtuber -->
-  `
+ `
 }
 const boxYoutubers = document.querySelector('.caroussel-youtube .youtubers')
 const boxModais = document.querySelector('.modais-youtubers')

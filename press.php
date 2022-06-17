@@ -144,42 +144,7 @@ include "config.php";
                   <img src="./img/botao-voltar.png" alt="" />
                 </div>
                 <div class="youtubers">
-                  <div class="box" onclick="youtuberModal.show()">
-                    <img
-                      class="foto"
-                      src="./img/monkey-gamer-face.png"
-                      alt=""
-                    />
-                    <h6><?php echo $lang['caroucel_youtube_nome_1']?></h6>
-                    <p><?php echo $lang['caroucel_youtube_arroba_1']?></p>
-                  </div>
-                  <div class="box" onclick="youtuberModal.show()">
-                    <img
-                      class="foto"
-                      src="./img/monkey-gamer-face.png"
-                      alt=""
-                    />
-                    <h6><?php echo $lang['caroucel_youtube_nome_1']?></h6>
-                    <p><?php echo $lang['caroucel_youtube_arroba_1']?></p>
-                  </div>
-                  <div class="box" onclick="youtuberModal.show()">
-                    <img
-                      class="foto"
-                      src="./img/monkey-gamer-face.png"
-                      alt=""
-                    />
-                    <h6><?php echo $lang['caroucel_youtube_nome_1']?></h6>
-                    <p><?php echo $lang['caroucel_youtube_arroba_1']?></p>
-                  </div>
-                  <div class="box" onclick="youtuberModal.show()">
-                    <img
-                      class="foto"
-                      src="./img/monkey-gamer-face.png"
-                      alt=""
-                    />
-                    <h6><?php echo $lang['caroucel_youtube_nome_1']?></h6>
-                    <p><?php echo $lang['caroucel_youtube_arroba_1']?></p>
-                  </div>
+                                   
                 </div>
                 <div class="btn-avancar controle">
                   <img src="./img/botao-avancar.png" alt="" />
@@ -189,28 +154,10 @@ include "config.php";
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2><?php echo $lang['press_titulo']?></h2>
-            <div class="box-caroussel">
-              <div class="placa"><h3><?php echo $lang['caroucel_youtube_titulo']?></h3></div>
-              <div class="caroussel caroussel-youtube">
-                <div class="btn-voltar controle">
-                  <img src="./img/botao-voltar.png" alt="" />
-                </div>
-                <div class="youtubers">
+            <div class="modais-youtubers">
 
-                </div>
-                <div class="btn-avancar controle">
-                  <img src="./img/botao-avancar.png" alt="" />
-                </div>
-                <div role="tablist" class="dots"></div>
-              </div>
-              <div class="modais-youtubers">
-
-              </div>
             </div>
           </div>
         </div>
@@ -228,50 +175,21 @@ include "config.php";
                   <img src="./img/botao-voltar.png" alt="" />
                 </div>
                 <div class="news">
-                  <div class="box">
-                    <img
-                      class="foto"
-                      src="./img/foto-controle.png"
-                      alt=""
-                    />
-                    <div class="texto-news">
-                      <h6><?php echo $lang['caroucel_news_chamada_1']?></h6>
-                      <p><?php echo $lang['caroucel_news_texto_1']?></p>
-                    </div>
-                  </div>
-                  <div class="box">
-                    <img
-                      class="foto"
-                      src="./img/foto-controle.png"
-                      alt=""
-                    />
-                    <div class="texto-news">
-                      <h6><?php echo $lang['caroucel_news_chamada_1']?></h6>
-                      <p><?php echo $lang['caroucel_news_texto_1']?></p>
-                    </div>
-                  </div>
-                  <div class="box">
-                    <img
-                      class="foto"
-                      src="./img/foto-controle.png"
-                      alt=""
-                    />
-                    <div class="texto-news">
-                      <h6><?php echo $lang['caroucel_news_chamada_1']?></h6>
-                      <p><?php echo $lang['caroucel_news_texto_1']?></p>
-                    </div>
-                  </div>
-                  <div class="box">
-                    <img
-                    class="foto"
-                    src="./img/foto-controle.png"
-                    alt=""
-                    />
-                    <div class="texto-news">
-                      <h6><?php echo $lang['caroucel_news_chamada_1']?></h6>
-                      <p><?php echo $lang['caroucel_news_texto_1']?></p>
-                    </div>
-                  </div>
+                  <?php foreach ($lista_equipe as $pessoa_equipe) : ?>
+                    <a target="_blank" href="<?php echo $pessoa_equipe->link ?>">
+                      <div class="box">
+                        <img
+                          class="foto"
+                          src="./img/press/<?php echo $pessoa_equipe->thumb ?>"
+                          alt=""
+                        />
+                        <div class="texto-news">
+                          <h6><?php echo $pessoa_equipe->titulo ?></h6>
+                          <p><?php echo $pessoa_equipe->chamada ?></p>
+                        </div>
+                      </div>
+                    </a>
+                  <?php endforeach; ?>
                 </div>
                 <div class="btn-avancar controle">
                   <img src="./img/botao-avancar.png" alt="" />
@@ -295,14 +213,20 @@ include "config.php";
         <div class="row">
           <div class="col-12">
             <div class="box-communities">
-              <a href="#">
-                <img src="./img/comunidade-1.png" alt="">
+              <a target="_blank" href="https://t.me/bananaLobby">
+                <img src="./img/press/comunidade-1.png" alt="">
               </a>
-              <a href="#">
-                <img src="./img/comunidade-2.png" alt="">
+              <a target="_blank" href="https://t.me/GameFiVietnamCommunity">
+                <img src="./img/press/comunidade-2.png" alt="">
               </a>
-              <a href="#">
-                <img src="./img/comunidade-3.png" alt="">
+              <a target="_blank" href="https://t.me/CryptoTiTans0">
+                <img src="./img/press/comunidade-4.jpg" alt="">
+              </a>
+              <a target="_blank" href="https://t.me/MundoNFTLatam">
+                <img src="./img/press/comunidade-5.jpg" alt="">
+              </a>
+              <a target="_blank" href="https://t.me/virtualcapital2022">
+                <img src="./img/press/comunidade-6.jpg" alt="">
               </a>
             </div>
           </div>
