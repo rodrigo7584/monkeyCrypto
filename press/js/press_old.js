@@ -83,7 +83,7 @@ function gerarSlides(thumb, nome, indice) {
     <div class="box" data-bs-toggle="modal" data-bs-target="#${indice}">
       <img
         class="foto"
-        src="./img/press/${thumb}.jpg"
+        src="./img/${thumb}.jpg"
         alt=""
       />
       <h6>${nome}</h6>

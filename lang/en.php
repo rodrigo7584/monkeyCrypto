@@ -61,7 +61,7 @@ $lang = array(
   "communities_titulo" => "COMMUNITIES"
 );
 
-$lista_equipe = array(
+$lista_materias = array(
     (object) array(
       "thumb" => "materia-1.png",
       "titulo" => "Criptonizando",
@@ -92,4 +92,67 @@ $lista_equipe = array(
       "chamada" => "Ape Island develops an intriguing and simplistic Play to Earn game",
       "link" => "https://www.digitaljournal.com/pr/ape-island-develops-an-intriguing-and-simplistic-play-to-earn-game"
     ),
-    );
+  );
+
+$lista_youtubers = array (
+    (object) array(
+      'id' => 'youtuber1',
+      'thumb' => 'thumb-1',
+      'nome' => 'Papo Profissional',
+      'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/mTjd2pUy_6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    ),
+    (object) array(
+      'id' => 'youtuber2',
+      'thumb' => 'thumb-2',
+      'nome' => 'Mattos',
+      'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/AFPNKP96V0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    ),
+    (object) array(
+      'id' => 'youtuber3',
+      'thumb' => 'thumb-3',
+      'nome' => 'PatoinTV',
+      'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/g9eOo2YC0Qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    ),
+    (object) array(
+      'id' => 'youtuber4',
+      'thumb' => 'thumb-4',
+      'nome' => 'CryptoBlack',
+      'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/4niG3RVcQgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    ),
+    (object) array(
+      'id' => 'youtuber5',
+      'thumb' => 'thumb-5',
+      'nome' => 'Primo Crypto',
+      'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/3f10UsYDNd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    ),
+    (object) array(
+      'id' => 'youtuber6',
+      'thumb' => 'thumb-6',
+      'nome' => 'JonF Cripto',
+      'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/7gaFYf_yrLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    ),
+    (object) array(
+      'id' => 'youtuber7',
+      'thumb' => 'thumb-7',
+      'nome' => 'Vovô Cripto',
+      'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/pfQDJgYNs90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    ),
+    (object) array(
+      'id' => 'youtuber8',
+      'thumb' => 'thumb-8',
+      'nome' => 'Príncipe Cripto',
+      'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/zba_TGvK_D0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    ),
+    (object) array(
+      'id' => 'youtuber9',
+      'thumb' => 'thumb-9',
+      'nome' => 'Alan NFT',
+      'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/-gOaTbQmBuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    ),
+    (object) array(
+      'id' => 'youtuber10',
+      'thumb' => 'thumb-10',
+      'nome' => 'Lucky Man',
+      'video' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/3NengZWMFjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    )
+);

@@ -141,7 +141,7 @@ include "config.php";
                       >
                     </li>
                     <li class="dropdown-item-title dropdown-item">
-                      <a href="press.php">
+                      <a href="./press">
                         <?php echo $lang['menu_item_3_subitem_2_titulo']?>
                       </a>
                     </li>
