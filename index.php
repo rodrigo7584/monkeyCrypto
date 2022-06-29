@@ -155,7 +155,7 @@ include "config.php";
                     <li>
                       <a
                         class="dropdown-item"
-                        href="https://ape-island.gitbook.io/ape-island-game-in/"
+                        href="./press/assets.php"
                         ><?php echo $lang['menu_item_3_subitem_2_item_2']?></a
                       >
                     </li>
@@ -622,7 +622,7 @@ include "config.php";
               <ul class="submenu">
                 <li><a href="#team"><?php echo $lang['menu_item_4']?></a></li>
                 <li><a href="#tokenomics"><?php echo $lang['menu_item_6']?></a></li>
-                <li><a href="press.php"><?php echo $lang['menu_item_7']?></a></li>
+                <li><a href="./press/index.php"><?php echo $lang['menu_item_7']?></a></li>
               </ul>
             </div>
             <div class="coluna">

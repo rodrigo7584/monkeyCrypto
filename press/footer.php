@@ -21,21 +21,21 @@
             </div>
             <div class="coluna">
               <ul class="submenu">
-                <li><a href="#characters"><?php echo $lang['menu_item_1']?></a></li>
-                <li><a href="#gameplay"><?php echo $lang['menu_item_2']?></a></li>
-                <li><a href="#checklist"><?php echo $lang['menu_item_5']?></a></li>
+                <li><a href="../index.php#characters"><?php echo $lang['menu_item_1']?></a></li>
+                <li><a href="../index.php#gameplay"><?php echo $lang['menu_item_2']?></a></li>
+                <li><a href="../index.php#checklist"><?php echo $lang['menu_item_5']?></a></li>
               </ul>
             </div>
             <div class="coluna">
               <ul class="submenu">
-                <li><a href="#team"><?php echo $lang['menu_item_4']?></a></li>
-                <li><a href="#tokenomics"><?php echo $lang['menu_item_6']?></a></li>
-                <li><a href="press.php"><?php echo $lang['menu_item_7']?></a></li>
+                <li><a href="../index.php#team"><?php echo $lang['menu_item_4']?></a></li>
+                <li><a href="../index.php#tokenomics"><?php echo $lang['menu_item_6']?></a></li>
+                <li><a href="./index.php"><?php echo $lang['menu_item_7']?></a></li>
               </ul>
             </div>
             <div class="coluna">
               <h5><?php echo $lang['contato']?></h5>
-              <form action="enviar.php" method="post">
+              <form action="../enviar.php" method="post">
                 <input type="text" placeholder="<?php echo $lang['placeholder_1']?>" name="nome" />
                 <input type="text" placeholder="email" name="email" />
                 <textarea placeholder="message..." name="mensagem"></textarea>

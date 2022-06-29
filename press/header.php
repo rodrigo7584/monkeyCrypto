@@ -7,8 +7,8 @@ include "../config.php";
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./img/logo-caveira.png" />
-    <link rel="shortcut icon" href="./img/logo-caveira.png" type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" href="../img/logo-caveira.png" />
+    <link rel="shortcut icon" href="../img/logo-caveira.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.css"
@@ -76,17 +76,70 @@ include "../config.php";
               id="navbarNavDropdown"
             >
               <ul class="navbar-nav align-items-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.php#characters"><?php echo $lang['menu_item_1']?></a>
+              <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                  <?php echo $lang['menu_item_3']?>
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li class="dropdown-item-title">
+                      <?php echo $lang['menu_item_3_subitem_1_titulo']?>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://ape-island.gitbook.io/ape-island-game-pt/"
+                        ><?php echo $lang['menu_item_3_subitem_1_item_1']?></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://ape-island.gitbook.io/ape-island-game-in/"
+                        ><?php echo $lang['menu_item_3_subitem_1_item_2']?></a
+                      >
+                    </li>
+                    <li class="dropdown-item-title dropdown-item">
+                      <a href="../press">
+                        <?php echo $lang['menu_item_3_subitem_2_titulo']?>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://play.apeislandgame.io/"
+                        ><?php echo $lang['menu_item_3_subitem_2_item_1']?></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../press/assets.php"
+                        ><?php echo $lang['menu_item_3_subitem_2_item_2']?></a
+                      >
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php#gameplay"><?php echo $lang['menu_item_2']?></a>
+                  <a class="nav-link" href="../index.php#characters"><?php echo $lang['menu_item_1']?></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php#team"><?php echo $lang['menu_item_4']?></a>
+                  <a class="nav-link" href="../index.php#gameplay"><?php echo $lang['menu_item_2']?></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.php#tokenomics"><?php echo $lang['menu_item_6']?></a>
+                  <a class="nav-link" href="../index.php#team"><?php echo $lang['menu_item_4']?></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.php#tokenomics"><?php echo $lang['menu_item_6']?></a>
                 </li>
                 <li class="nav-item dropdown menu-idioma">
                   <a

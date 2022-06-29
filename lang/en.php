@@ -53,12 +53,18 @@ $lang = array(
   "retorno_email" => "Your message was sent",
   "press_titulo" => "PRESS",
   "caroucel_youtube_titulo" => "YOUTUBE",
-  "caroucel_youtube_nome_1" => "NAME INFLUENCER",
-  "caroucel_youtube_arroba_1" => "@influencer",
   "caroucel_news_titulo" => "NEWS",
-  "caroucel_news_chamada_1" => "Lorem ipsum",
-  "caroucel_news_texto_1" => "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut",
-  "communities_titulo" => "COMMUNITIES"
+  "communities_titulo" => "COMMUNITIES",
+  "assets_titulo" => "ASSETS",
+  "assest_1" => "First images of the development of our new island, Candy Island.",
+  "assest_2" => "On this island there will be mini games for users.",
+  "assest_3" => "Bringing even more fun to our game.",
+  "assest_4" => "RIG process of our new monkey, Dinnie",
+  "assest_5" => "3D process of creating the legendary insignia.",
+  "assest_6" => "Tests by assembling the set of islands.",
+  "assest_7" => "Tests by assembling the set of islands.",
+  "assest_8" => "Tests related to game mechanics and phase adjustments.",
+  "assest_9" => "Parallax test: moving the background layers parallel to the player.",
 );
 
 $lista_materias = array(
