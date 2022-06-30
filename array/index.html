@@ -24,6 +24,14 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@vime/core@^5/dist/vime/vime.esm.js"
+    ></script>
     <title>Document</title>
   </head>
   <body>
@@ -42,7 +50,29 @@
     <div class="modais"></div>
 
     <h1 class="text-center"></h1>
+    <video controls class="myvideo">
+      <source src="./video.mp4" type="video/mp4" />
+    </video>
+    <button onclick="vai()">vais</button>
+    <vm-player playsinline>
+      <vm-youtube video-id="VFeYUrGkA9E"></vm-youtube>
 
+      <vm-default-ui></vm-default-ui>
+    </vm-player>
+    <vm-player playsinline class="teste">
+      <vm-youtube video-id="mtcPfhRatL4"></vm-youtube>
+
+      <vm-default-ui></vm-default-ui>
+    </vm-player>
+    <script>
+      const players = document.querySelectorAll('vm-player')
+      players
+      function vai() {
+        players.forEach(function (item) {
+          item.pause()
+        })
+      }
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.js"
       integrity="sha512-gAcB+wjrzbVlvnKqeqTSDTU6e7bPOiFCAe/bnJ8KXc99HFB7ApCoLMsk0+x3cBXh6+Vbt4gTf10DcJmKMUistA=="

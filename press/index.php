@@ -68,7 +68,10 @@
                   </div>
                 </div>
                 <div class="conteudo">
-                <?php echo $youtuber->video ?>
+                <vm-player playsinline>
+                  <vm-youtube video-id="<?php echo $youtuber->video ?>"></vm-youtube>
+                  <vm-default-ui></vm-default-ui>
+                </vm-player>
                 </div>
               </div>
             </div>

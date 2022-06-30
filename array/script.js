@@ -68,46 +68,42 @@ const slides = [
   },
   {
     nome: 'helio'
+  },
+  {
+    name: 'video'
   }
 ]
 
-// 2. This code loads the IFrame Player API code asynchronously.
-var tag = document.createElement('script')
+// let options = {
+//   root: null,
+//   rootMargin: '0px',
+//   threshold: 1.0
+// }
+// let callback = (entries, observer) => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       entry.target.play()
+//     } else {
+//       entry.target.pause()
+//     }
+//   })
+// }
+// let observer = new IntersectionObserver(callback, options)
+// observer.observe(document.querySelector('#myvideo'))
+// const videos = document.querySelectorAll('.myvideo')
+// const videosObserver = []
+// videos.forEach(function (item, i) {
+//   videosObserver[i] = new IntersectionObserver(callback, options)
+//   videosObserver[i].observe(item)
+// })
 
-tag.src = 'https://www.youtube.com/iframe_api'
-var firstScriptTag = document.getElementsByTagName('script')[0]
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
-
-// 3. This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
-var player
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('rodrigo', {
-    height: '360',
-    width: '640',
-    videoId: 'M7lc1UVf-VE',
-    events: {
-      onReady: onPlayerReady,
-      onStateChange: onPlayerStateChange
-    }
-  })
-}
-
-// 4. The API will call this function when the video player is ready.
-function onPlayerReady(event) {
-  event.target.playVideo()
-}
-
-// 5. The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
-var done = false
-function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PLAYING && !done) {
-    setTimeout(stopVideo, 6000)
-    done = true
-  }
-}
-function stopVideo() {
-  player.stopVideo()
-}
+// $(document).ready(function () {
+//   // Video 1
+//   var vid = document.getElementById('teste')
+//   $('#trailer').on('shown.bs.modal', function () {
+//     vid.play()
+//   })
+//   $('#trailer').on('hidden.bs.modal', function () {
+//     vid.pause()
+//   })
+// })

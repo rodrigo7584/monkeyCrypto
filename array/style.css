@@ -8,3 +8,9 @@
   margin: 10px;
   border-radius: 7px;
 }
+
+.myvideo {
+  display: block;
+  max-width: 30vw;
+  /* margin: 120vh 0; */
+}

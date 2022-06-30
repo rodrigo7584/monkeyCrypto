@@ -106,9 +106,16 @@
             <div class="box">
               <div class="row justify-content-center">
                 <div class="col-12 px-md-5">
-                  <video controls class="video-assets">
+                  <!-- <video controls class="video-assets">
                     <source src="./videos/video2.mp4" type="video/mp4" />
-                  </video>
+                  </video> -->
+                  <vm-player >
+                    <vm-video>
+                      <source data-src="./videos/video2.mp4" type="video/mp4" />
+                    </vm-video>
+                    <vm-default-ui>
+                    </vm-default-ui>
+                  </vm-player>
                 </div>
                 <div class="col-md-8 pt-3">
                   <p><?php echo $lang['assest_9']?></p>
