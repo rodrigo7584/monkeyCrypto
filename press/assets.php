@@ -109,12 +109,10 @@
                   <!-- <video controls class="video-assets">
                     <source src="./videos/video2.mp4" type="video/mp4" />
                   </video> -->
-                  <vm-player >
+                  <vm-player controls >
                     <vm-video>
                       <source data-src="./videos/video2.mp4" type="video/mp4" />
                     </vm-video>
-                    <vm-default-ui>
-                    </vm-default-ui>
                   </vm-player>
                 </div>
                 <div class="col-md-8 pt-3">
